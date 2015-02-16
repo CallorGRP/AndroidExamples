@@ -1,0 +1,63 @@
+package com.example.myexample;
+
+import android.app.ListActivity;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Toast;
+
+import com.example.myexample.AdapterView.AdapterView_Activity;
+import com.example.myexample.Layouts.Layout_Activity;
+import com.example.myexample.Views.View_Activity;
+import com.example.myexample.Widgets.Widget_Activity;
+import com.example.myexample.Thread.Thread_Activity;
+
+public class MainActivity extends ListActivity implements OnItemClickListener {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Resources res = getResources();
+        String[] args = res.getStringArray(R.array.main_menu);
+
+        setListAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, args));
+
+        getListView().setOnItemClickListener(this);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+        Resources res = getResources();
+        String[] args = res.getStringArray(R.array.main_menu);
+        Intent i = null;
+        switch (arg2) {
+            case 0:
+                i = new Intent(this, View_Activity.class);
+                break;
+            case 1:
+                i = new Intent(this, Layout_Activity.class);
+                break;
+            case 2:
+                i = new Intent(this, Widget_Activity.class);
+                break;
+            case 3:
+                i = new Intent(this, AdapterView_Activity.class);
+                break;
+            case 5:
+                i = new Intent(this, Thread_Activity.class);
+                break;
+            default:
+                return;
+        }
+        startActivity(i);
+        Toast.makeText(this, args[arg2], Toast.LENGTH_SHORT).show();
+
+    }
+}

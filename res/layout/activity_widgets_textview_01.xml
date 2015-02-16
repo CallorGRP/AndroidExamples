@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#000000" android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView." />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView."
+        android:textColor="#ff0000" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView."
+        android:textSize="20sp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView."
+        android:textStyle="italic" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView."
+        android:typeface="serif" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#ffffff" android:singleLine="true"
+        android:text="안녕하세요. 이것은 텍스트뷰입니다. This is a TextView.안녕하세요. 이것은 텍스트뷰입니다. This is a TextView." />
+
+</LinearLayout>

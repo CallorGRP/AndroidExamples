@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myexample"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <!-- 뷰 -->
+        <activity android:name=".Views.View_Activity" />
+        <activity android:name=".Views.View_Area_Activity" />
+        <activity android:name=".Views.View_Background_01_Activity" />
+        <activity android:name=".Views.View_Background_02_Activity" />
+        <activity android:name=".Views.View_Margin_Activity" />
+        <activity android:name=".Views.View_Visibility_01_Activity" />
+        <activity android:name=".Views.View_Visibility_02_Activity" />
+        <!-- 레이아웃 -->
+        <activity android:name=".Layouts.Layout_Activity" />
+        <activity android:name=".Layouts.Layout_LinearLayout_Orientation_01_Activity" />
+        <activity android:name=".Layouts.Layout_LinearLayout_Orientation_02_Activity" />
+        <activity android:name=".Layouts.Layout_LinearLayout_Weight_01_Activity" />
+        <activity android:name=".Layouts.Layout_LinearLayout_Weight_02_Activity" />
+        <activity android:name=".Layouts.Layout_RelativeLayout_01_Activity" />
+        <activity android:name=".Layouts.Layout_RelativeLayout_02_Activity" />
+        <activity android:name=".Layouts.Layout_TableLayout_01_Activity" />
+        <activity android:name=".Layouts.Layout_TableLayout_02_Activity" />
+        <activity android:name=".Layouts.Layout_ScrollView_01_Activity" />
+        <activity android:name=".Layouts.Layout_ScrollView_02_Activity" />
+        <activity android:name=".Layouts.Layout_GridLayout_01_Activity" />
+        <activity android:name=".Layouts.Layout_GridLayout_02_Activity" />
+        <!-- 위젯 -->
+        <activity android:name=".Widgets.Widget_Activity" />
+        <activity android:name=".Widgets.Widget_TextView_01_Activity" />
+        <activity android:name=".Widgets.Widget_TextView_02_Activity" />
+        <activity android:name=".Widgets.Widget_CompoundButton_01_Activity" />
+        <activity android:name=".Widgets.Widget_CompoundButton_02_Activity" />
+        <activity android:name=".Widgets.Widget_Button_01_Activity" />
+        <activity android:name=".Widgets.Widget_Button_02_Activity" />
+        <activity android:name=".Widgets.Widget_Button_03_Activity" />
+        <activity android:name=".Widgets.Widget_EditText_01_Activity" />
+        <activity android:name=".Widgets.Widget_EditText_02_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_01_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_02_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_03_Activity" />
+        <!-- 어댑터뷰 -->
+        <activity android:name=".AdapterView.AdapterView_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_01_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_02_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_03_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_04_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_05_Activity" />
+        <activity android:name=".AdapterView.AdapterView_GridView_01_Activity" />
+        <activity android:name=".AdapterView.AdapterView_GridView_02_Activity" />
+        <activity android:name=".AdapterView.AdapterView_GridView_03_Activity" />
+        <activity android:name=".AdapterView.AdapterView_GridView_04_Activity" />
+        <activity android:name=".AdapterView.AdapterView_Spinner_01_Activity" />
+        <activity android:name=".AdapterView.AdapterView_Spinner_02_Activity" />
+        <activity android:name=".AdapterView.AdapterView_Spinner_03_Activity" />
+
+        <activity android:name=".Thread.Thread_Activity" />
+        <activity android:name=".Thread.Thread_Thread_01_Activity" />
+        <activity android:name=".Thread.Thread_Thread_02_Activity" />
+        <activity android:name=".Thread.Thread_Thread_03_Activity" />
+        <activity android:name=".Thread.Thread_Thread_04_Activity" />
+        <activity android:name=".Thread.Thread_Thread_05_Activity" />
+        <activity android:name=".Thread.Thread_Thread_06_Activity" />
+        <activity android:name=".Thread.Thread_Thread_07_Activity" />
+        <activity android:name=".Thread.Thread_Thread_08_Activity" />
+        <activity android:name=".Thread.Thread_Thread_09_Activity" />
+        <activity android:name=".Thread.Thread_Thread_10_Activity" />
+        <activity android:name=".Thread.Thread_Thread_11_Activity" />
+        <activity android:name=".Thread.Thread_Thread_12_Activity" />
+
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

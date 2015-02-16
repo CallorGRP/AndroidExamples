@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_menu">
+        <item>뷰</item>
+        <item>레이아웃</item>
+        <item>기본위젯</item>
+        <item>어댑터뷰</item>
+        <item>대화상자</item>
+        <item>쓰레드</item>
+        <item>애니메이션</item>
+        <item>네트워킹</item>
+        <item>액티비티</item>
+        <item>프레그먼트</item>
+        <item>멀티미디어</item>
+        <item>위치 기반 서비스</item>
+        <item>근거리 무선통신</item>
+        <item>센서</item>
+        <item>구글Push서비스</item>
+    </string-array>
+    <string-array name="view_menu">
+        <item>뷰의 영역</item>
+        <item>뷰의 배경01</item>
+        <item>뷰의 배경02</item>
+        <item>뷰의 간격</item>
+        <item>뷰의 Visibility 01</item>
+        <item>뷰의 Visibility 02</item>
+    </string-array>
+    <string-array name="layout_menu">
+        <item>리니어레이아웃_방향_01</item>
+        <item>리니어레이아웃_방향_02</item>
+        <item>리니어레이아웃_방향_03</item>
+        <item>리니어레이아웃_공간가중치_01</item>
+        <item>리니어레이아웃_공간가중치_02</item>
+        <item>리니어레이아웃_정렬방식_01</item>
+        <item>리니어레이아웃_정렬방식_02</item>
+        <item>렐러티브레이아웃_01</item>
+        <item>렐러티브레이아웃_02</item>
+        <item>프레임레이아웃_01</item>
+        <item>프레임레이아웃_02</item>
+        <item>테이블레이아웃_01</item>
+        <item>테이블레이아웃_02</item>
+        <item>스크롤뷰_01</item>
+        <item>스크롤뷰_02</item>
+        <item>그리드레이아웃_01</item>
+        <item>그리드레이아웃_02</item>
+    </string-array>
+    <string-array name="widget_menu">
+        <item>텍스트뷰_01</item>
+        <item>텍스트뷰_02</item>
+        <item>버튼_01</item>
+        <item>버튼_02</item>
+        <item>버튼_03</item>
+        <item>컴파운드버튼_01</item>
+        <item>컴파운드버튼_02</item>
+        <item>에디트택스트_01</item>
+        <item>에디트택스트_02</item>
+        <item>이미지뷰_01</item>
+        <item>이미지뷰_02</item>
+        <item>이미지뷰_03</item>
+    </string-array>
+    <string-array name="adapterview_menu">
+        <item>리스트뷰_01</item>
+        <item>리스트뷰_02</item>
+        <item>리스트뷰_03</item>
+        <item>리스트뷰_04</item>
+        <item>리스트뷰_05</item>
+        <item>그리드뷰_01</item>
+        <item>그리드뷰_02</item>
+        <item>그리드뷰_03</item>
+        <item>그리드뷰_04</item>
+        <item>스피너_01</item>
+        <item>스피너_02</item>
+        <item>스피너_03</item>
+    </string-array>
+    <string-array name="thread_menu">
+        <item>쓰레드_01</item>
+        <item>쓰레드_02</item>
+        <item>쓰레드_03</item>
+        <item>쓰레드_04</item>
+        <item>쓰레드_05</item>
+        <item>쓰레드_06</item>
+        <item>쓰레드_07</item>
+        <item>쓰레드_08</item>
+        <item>쓰레드_09</item>
+        <item>쓰레드_10</item>
+        <item>쓰레드_11</item>
+        <item>쓰레드_12</item>
+    </string-array>
+
+</resources>
