@@ -83,6 +83,8 @@
         <activity android:name=".Activity.Activity_02_Activity" />
         <activity android:name=".Activity.Activity_03_Activity" />
         <activity android:name=".Activity.Activity_04_Activity" />
+        <activity android:name=".Activity.Activity_05_Activity" />
+        <activity android:name=".Activity.Activity_06_Activity" />
 
         <activity android:name=".IntroActivity">
             <intent-filter>
