@@ -10,6 +10,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.example.myexample.Activity.Activity_Activity;
 import com.example.myexample.AdapterView.AdapterView_Activity;
 import com.example.myexample.Layouts.Layout_Activity;
 import com.example.myexample.Views.View_Activity;
@@ -52,6 +53,9 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 break;
             case 5:
                 i = new Intent(this, Thread_Activity.class);
+                break;
+            case 8:
+                i = new Intent(this, Activity_Activity.class);
                 break;
             default:
                 return;

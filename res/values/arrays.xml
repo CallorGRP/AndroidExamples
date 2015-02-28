@@ -87,5 +87,10 @@
         <item>쓰레드_11</item>
         <item>쓰레드_12</item>
     </string-array>
-
+    <string-array name="activity_menu">
+        <item>액티비티01</item>
+        <item>액티비티02</item>
+        <item>액티비티03</item>
+        <item>액티비티04</item>
+    </string-array>
 </resources>
