@@ -1,42 +1,52 @@
 package com.example.myexample.Activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.util.Log;
 
 import com.example.myexample.R;
-import com.example.myexample.R.layout;
 
-public class Activity_06_Activity extends Activity implements View.OnClickListener {
-    EditText editText1;
-
+public class Activity_06_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_activity_05);
-
-        editText1 = (EditText) findViewById(R.id.editText1);
-
-        Button btnFinish = (Button)findViewById(R.id.finish);
-
-        btnFinish.setOnClickListener(this);
+        setContentView(R.layout.activity_activity_06);
+        Log.e("example", "onCreate()");
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.v("example", "onRestart()");
+    }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.finish:
+    protected void onStart() {
+        super.onStart();
+        Log.d("example", "onStart()");
+    }
 
-                Intent result = new Intent();
-                result.putExtra("result", editText1.getText().toString());
-                setResult(RESULT_OK, result);
-                finish();
-                break;
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("example", "onResume()");
+    }
 
-        }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("example", "onPause()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("example", "onStop()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e("example", "onDestroy()");
     }
 }
