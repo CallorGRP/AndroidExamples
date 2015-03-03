@@ -5,62 +5,58 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.myexample.R;
 
-public class Activity_06_Activity extends Activity implements View.OnClickListener {
+public class Activity_07_Activity extends Activity implements View.OnClickListener  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_06);
-        Log.e("example", "Activity A: onCreate()");
-
-        Button btnStart = (Button) findViewById(R.id.btnStart);
-        btnStart.setOnClickListener(this);
+        Log.e("example", "Activity B: onCreate()");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.v("example", "Activity A: onRestart()");
+        Log.v("example", "Activity B: onRestart()");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("example", "Activity A: onStart()");
+        Log.d("example", "Activity B: onStart()");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("example", "Activity A: onResume()");
+        Log.i("example", "Activity B: onResume()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i("example", "Activity A: onPause()");
+        Log.i("example", "Activity B: onPause()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("example", "Activity A: onStop()");
+        Log.d("example", "Activity B: onStop()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e("example", "Activity A: onDestroy()");
+        Log.e("example", "Activity B: onDestroy()");
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnStart:
-                Intent i = new Intent(this, Activity_07_Activity.class);
+                Intent i = new Intent(this, Activity_02_Activity.class);
                 startActivity(i);
 
                 break;
