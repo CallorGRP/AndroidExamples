@@ -10,12 +10,14 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import com.example.myexample.Activity.Activity_Activity;
-import com.example.myexample.AdapterView.AdapterView_Activity;
-import com.example.myexample.Layouts.Layout_Activity;
-import com.example.myexample.Views.View_Activity;
-import com.example.myexample.Widgets.Widget_Activity;
-import com.example.myexample.Thread.Thread_Activity;
+import com.example.myexample.Activity.Activity_Main;
+import com.example.myexample.AdapterView.AdapterView_Main;
+import com.example.myexample.BroadcastReceiver.Receiver_Main;
+import com.example.myexample.Layouts.Layout_Main;
+import com.example.myexample.Service.Service_Main;
+import com.example.myexample.Thread.Thread_Main;
+import com.example.myexample.Views.View_Main;
+import com.example.myexample.Widgets.Widget_Main;
 
 public class MainActivity extends ListActivity implements OnItemClickListener {
 
@@ -40,22 +42,28 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
         Intent i = null;
         switch (arg2) {
             case 0:
-                i = new Intent(this, View_Activity.class);
+                i = new Intent(this, View_Main.class);
                 break;
             case 1:
-                i = new Intent(this, Layout_Activity.class);
+                i = new Intent(this, Layout_Main.class);
                 break;
             case 2:
-                i = new Intent(this, Widget_Activity.class);
+                i = new Intent(this, Widget_Main.class);
                 break;
             case 3:
-                i = new Intent(this, AdapterView_Activity.class);
+                i = new Intent(this, AdapterView_Main.class);
                 break;
             case 5:
-                i = new Intent(this, Thread_Activity.class);
+                i = new Intent(this, Thread_Main.class);
                 break;
             case 8:
-                i = new Intent(this, Activity_Activity.class);
+                i = new Intent(this, Activity_Main.class);
+                break;
+            case 9:
+                i = new Intent(this, Service_Main.class);
+                break;
+            case 10:
+                i = new Intent(this, Receiver_Main.class);
                 break;
             default:
                 return;

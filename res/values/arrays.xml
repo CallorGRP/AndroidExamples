@@ -11,6 +11,8 @@
         <item>애니메이션</item>
         <item>네트워킹</item>
         <item>액티비티</item>
+        <item>서비스</item>
+        <item>브로드케스트리시버</item>
         <item>프레그먼트</item>
         <item>멀티미디어</item>
         <item>위치 기반 서비스</item>
@@ -96,5 +98,18 @@
         <item>액티비티06</item>
         <item>액티비티07</item>
         <item>액티비티08</item>
+    </string-array>
+    <string-array name="service_menu">
+        <item>서비스01</item>
+        <item>서비스02</item>
+        <item>서비스03</item>
+    </string-array>
+    <string-array name="receiver_menu">
+        <item>브로드케스트리시버01</item>
+        <item>브로드케스트리시버02</item>
+        <item>브로드케스트리시버03</item>
+    </string-array>
+    <string-array name="provider_menu">
+        <item>콘텐트프로바이더01</item>
     </string-array>
 </resources>

@@ -21,7 +21,7 @@ import com.example.myexample.AdapterView.AdapterView_ListView_05_Activity;
 import com.example.myexample.AdapterView.AdapterView_Spinner_01_Activity;
 import com.example.myexample.R;
 
-public class Activity_Activity extends ListActivity
+public class Activity_Main extends ListActivity
         implements
         OnItemClickListener {
 

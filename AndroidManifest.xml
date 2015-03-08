@@ -15,7 +15,7 @@
         android:label="@string/app_name" android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <!-- 뷰 -->
-        <activity android:name=".Views.View_Activity" />
+        <activity android:name=".Views.View_Main" />
         <activity android:name=".Views.View_Area_Activity" />
         <activity android:name=".Views.View_Background_01_Activity" />
         <activity android:name=".Views.View_Background_02_Activity" />
@@ -23,7 +23,7 @@
         <activity android:name=".Views.View_Visibility_01_Activity" />
         <activity android:name=".Views.View_Visibility_02_Activity" />
         <!-- 레이아웃 -->
-        <activity android:name=".Layouts.Layout_Activity" />
+        <activity android:name=".Layouts.Layout_Main" />
         <activity android:name=".Layouts.Layout_LinearLayout_Orientation_01_Activity" />
         <activity android:name=".Layouts.Layout_LinearLayout_Orientation_02_Activity" />
         <activity android:name=".Layouts.Layout_LinearLayout_Weight_01_Activity" />
@@ -37,7 +37,7 @@
         <activity android:name=".Layouts.Layout_GridLayout_01_Activity" />
         <activity android:name=".Layouts.Layout_GridLayout_02_Activity" />
         <!-- 위젯 -->
-        <activity android:name=".Widgets.Widget_Activity" />
+        <activity android:name=".Widgets.Widget_Main" />
         <activity android:name=".Widgets.Widget_TextView_01_Activity" />
         <activity android:name=".Widgets.Widget_TextView_02_Activity" />
         <activity android:name=".Widgets.Widget_CompoundButton_01_Activity" />
@@ -51,7 +51,7 @@
         <activity android:name=".Widgets.Widget_ImageView_02_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_03_Activity" />
         <!-- 어댑터뷰 -->
-        <activity android:name=".AdapterView.AdapterView_Activity" />
+        <activity android:name=".AdapterView.AdapterView_Main" />
         <activity android:name=".AdapterView.AdapterView_ListView_01_Activity" />
         <activity android:name=".AdapterView.AdapterView_ListView_02_Activity" />
         <activity android:name=".AdapterView.AdapterView_ListView_03_Activity" />
@@ -65,7 +65,7 @@
         <activity android:name=".AdapterView.AdapterView_Spinner_02_Activity" />
         <activity android:name=".AdapterView.AdapterView_Spinner_03_Activity" />
 
-        <activity android:name=".Thread.Thread_Activity" />
+        <activity android:name=".Thread.Thread_Main" />
         <activity android:name=".Thread.Thread_Thread_01_Activity" />
         <activity android:name=".Thread.Thread_Thread_02_Activity" />
         <activity android:name=".Thread.Thread_Thread_03_Activity" />
@@ -79,7 +79,7 @@
         <activity android:name=".Thread.Thread_Thread_11_Activity" />
         <activity android:name=".Thread.Thread_Thread_12_Activity" />
 
-        <activity android:name=".Activity.Activity_Activity" />
+        <activity android:name=".Activity.Activity_Main" />
         <activity android:name=".Activity.Activity_01_Activity" />
         <activity android:name=".Activity.Activity_02_Activity" />
         <activity android:name=".Activity.Activity_03_Activity" />
@@ -88,6 +88,23 @@
         <activity android:name=".Activity.Activity_06_Activity" />
         <activity android:name=".Activity.Activity_07_Activity" />
         <activity android:name=".Activity.Activity_08_Activity" />
+
+        <activity android:name=".Service.Service_Main" />
+        <activity android:name=".Service.Service_01_Activity" />
+        <activity android:name=".Service.Service_02_Activity" />
+        <activity android:name=".Service.Service_03_Activity" />
+        <service android:name=".Service.Service_02_Service" />
+        <service android:name=".Service.Service_03_Service" />
+
+        <activity android:name=".BroadcastReceiver.Receiver_Main" />
+        <activity android:name=".BroadcastReceiver.Receiver_01_Activity" />
+        <receiver android:name=".BroadcastReceiver.Receiver_01_Receiver">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
 
         <activity android:name=".IntroActivity">
             <intent-filter>
