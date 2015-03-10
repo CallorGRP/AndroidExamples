@@ -106,6 +106,14 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".MultiMedia.MultiMedia_Main" />
+        <activity android:name=".MultiMedia.MultiMedia_01_Activity" />
+        <activity android:name=".MultiMedia.MultiMedia_02_Activity" />
+        <activity android:name=".MultiMedia.MultiMedia_03_Activity" />
+        <activity android:name=".MultiMedia.MultiMedia_04_Activity" />
+        <activity android:name=".MultiMedia.MultiMedia_05_Activity" />
+        <activity android:name=".MultiMedia.MultiMedia_06_Activity" />
+
         <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

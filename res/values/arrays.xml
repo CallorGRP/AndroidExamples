@@ -112,4 +112,12 @@
     <string-array name="provider_menu">
         <item>콘텐트프로바이더01</item>
     </string-array>
+    <string-array name="multimedia_menu">
+        <item>멀티미디어01</item>
+        <item>멀티미디어02</item>
+        <item>멀티미디어03</item>
+        <item>멀티미디어04</item>
+        <item>멀티미디어05</item>
+        <item>멀티미디어06</item>
+    </string-array>
 </resources>
