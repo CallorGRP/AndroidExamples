@@ -18,7 +18,7 @@ public class MultiMedia_01_Activity extends Activity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_activity_08);
+        setContentView(layout.activity_multimedia_01);
 
         Button btnStart = (Button) findViewById(R.id.btnStart);
         Button btnStop = (Button) findViewById(R.id.btnStop);

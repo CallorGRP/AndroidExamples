@@ -13,32 +13,21 @@
         android:textSize="40sp" />
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/btnStartResource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="재생하기" />
+        android:text="내부 리소스 재생하기" />
 
     <Button
-        android:id="@+id/btnStop"
+        android:id="@+id/btnStartFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="중지하기" />
+        android:text="SD카드 파일 재생하기" />
 
     <Button
-        android:id="@+id/btnPause"
+        android:id="@+id/btnStartStream"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="일시정지(Pause)" />
-
-    <Button
-        android:id="@+id/btnRestart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="재시작(Restart)" />
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar" />
+        android:text="웹 스트리밍 재생하기" />
 
 </LinearLayout>
