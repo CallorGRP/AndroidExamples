@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class MultiMedia_02_Activity extends Activity implements View.OnClickListener {
 
-
+    MediaPlayer player;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,28 +36,28 @@ public class MultiMedia_02_Activity extends Activity implements View.OnClickList
         switch (v.getId()) {
             case R.id.btnStartResource:
 
-                MediaPlayer player_raw = MediaPlayer.create(MultiMedia_02_Activity.this, R.raw.merry_christmas);
-                player_raw.start();
+                player = MediaPlayer.create(MultiMedia_02_Activity.this, R.raw.konan);
+                player.start();
 
                 break;
             case R.id.btnStartFile:
                 try {
-                    MediaPlayer player_file = new MediaPlayer();
-                    player_file.setDataSource(Environment.getExternalStorageDirectory() + "/myexample/Handprints.mp3");
-                    player_file.prepare();
-                    player_file.start();
+                    player = new MediaPlayer();
+                    player.setDataSource(Environment.getExternalStorageDirectory() + "/myexample/Handprints.mp3");
+                    player.prepare();
+                    player.start();
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
                 break;
             case R.id.btnStartStream:
-                MediaPlayer player_stream = new MediaPlayer();
+                player = new MediaPlayer();
                 try {
                     Uri uri = Uri.parse("");
-                    player_stream.setDataSource(MultiMedia_02_Activity.this, uri);
-                    player_stream.prepare();
-                    player_stream.start();
+                    player.setDataSource(MultiMedia_02_Activity.this, uri);
+                    player.prepare();
+                    player.start();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -68,4 +68,11 @@ public class MultiMedia_02_Activity extends Activity implements View.OnClickList
         }
     }
 
+    @Override
+    protected void onDestroy() {
+
+        if ( player != null )
+            player.release();
+        super.onDestroy();
+    }
 }
