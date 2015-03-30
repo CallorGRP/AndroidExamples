@@ -15,6 +15,7 @@ import com.example.myexample.AdapterView.AdapterView_Main;
 import com.example.myexample.BroadcastReceiver.Receiver_Main;
 import com.example.myexample.Layouts.Layout_Main;
 import com.example.myexample.MultiMedia.MultiMedia_Main;
+import com.example.myexample.Network.Network_Main;
 import com.example.myexample.Service.Service_Main;
 import com.example.myexample.Thread.Thread_Main;
 import com.example.myexample.Views.View_Main;
@@ -56,6 +57,9 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 break;
             case 5:
                 i = new Intent(this, Thread_Main.class);
+                break;
+            case 7:
+                i = new Intent(this, Network_Main.class);
                 break;
             case 8:
                 i = new Intent(this, Activity_Main.class);

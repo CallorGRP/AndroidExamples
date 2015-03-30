@@ -9,7 +9,7 @@
         <item>대화상자</item>
         <item>쓰레드</item>
         <item>애니메이션</item>
-        <item>네트워킹</item>
+        <item>네트워크</item>
         <item>액티비티</item>
         <item>서비스</item>
         <item>브로드케스트리시버</item>
@@ -123,5 +123,17 @@
         <item>멀티미디어08</item>
         <item>멀티미디어09</item>
         <item>멀티미디어10</item>
+    </string-array>
+    <string-array name="network_menu">
+        <item>네트워크01</item>
+        <item>네트워크02</item>
+        <item>네트워크03</item>
+        <item>네트워크04</item>
+        <item>네트워크05</item>
+        <item>네트워크06</item>
+        <item>네트워크07</item>
+        <item>네트워크08</item>
+        <item>네트워크09</item>
+        <item>네트워크10</item>
     </string-array>
 </resources>
