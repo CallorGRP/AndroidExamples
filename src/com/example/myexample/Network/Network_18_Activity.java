@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.example.myexample.R;
 import com.example.myexample.R.layout;
 
-public class Network_09_Activity extends Activity implements View.OnClickListener {
+public class Network_18_Activity extends Activity implements View.OnClickListener {
 
     WebView webView;
 
