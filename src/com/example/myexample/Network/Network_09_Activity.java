@@ -40,7 +40,7 @@ public class Network_09_Activity extends Activity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnWeb:
-                webView.loadUrl("http://www.google.com/");
+                webView.loadUrl("http://www.google.com/maps");
                 break;
             case R.id.btnCurrent:
                 Toast.makeText(this, webView.getUrl(), Toast.LENGTH_SHORT).show();
@@ -48,14 +48,5 @@ public class Network_09_Activity extends Activity implements View.OnClickListene
             default:
                 break;
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (webView.canGoBack())
-            webView.goBack();
-        else
-            super.onBackPressed();
-
     }
 }

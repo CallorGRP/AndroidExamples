@@ -1,8 +1,11 @@
 package com.example.myexample.Network;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -18,13 +21,13 @@ public class Network_12_Activity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_network_09);
+        setContentView(layout.activity_network_12);
 
         webView = (WebView) findViewById(R.id.webView);
         Button btnWeb = (Button) findViewById(R.id.btnWeb);
         Button btnCurrent = (Button) findViewById(R.id.btnCurrent);
 
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new myWebClient());
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
@@ -58,4 +61,28 @@ public class Network_12_Activity extends Activity implements View.OnClickListene
             super.onBackPressed();
 
     }
+
+    public class myWebClient extends WebViewClient
+    {
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+            Log.d("Network_12_Activity", "page started:" + url);
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            Log.d("Network_12_Activity", "onPageFinished:" + url);
+        }
+
+        @Override
+        public void onLoadResource(WebView view, String url) {
+            super.onLoadResource(view, url);
+            Log.d("Network_12_Activity", "onLoadResource:" + url);
+
+        }
+
+    }
+
 }
