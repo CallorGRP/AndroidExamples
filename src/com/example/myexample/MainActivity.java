@@ -19,6 +19,7 @@ import com.example.myexample.Network.Network_Main;
 import com.example.myexample.Service.Service_Main;
 import com.example.myexample.Thread.Thread_Main;
 import com.example.myexample.Views.View_Main;
+import com.example.myexample.WebView.WebView_Main;
 import com.example.myexample.Widgets.Widget_Main;
 
 public class MainActivity extends ListActivity implements OnItemClickListener {
@@ -62,15 +63,18 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 i = new Intent(this, Network_Main.class);
                 break;
             case 8:
-                i = new Intent(this, Activity_Main.class);
+                i = new Intent(this, WebView_Main.class);
                 break;
             case 9:
-                i = new Intent(this, Service_Main.class);
+                i = new Intent(this, Activity_Main.class);
                 break;
             case 10:
+                i = new Intent(this, Service_Main.class);
+                break;
+            case 11:
                 i = new Intent(this, Receiver_Main.class);
                 break;
-            case 12:
+            case 13:
                 i = new Intent(this, MultiMedia_Main.class);
                 break;
             default:

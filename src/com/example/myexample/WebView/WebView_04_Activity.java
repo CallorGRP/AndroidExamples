@@ -1,4 +1,4 @@
-package com.example.myexample.Network;
+package com.example.myexample.WebView;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,30 +6,29 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.myexample.R;
 import com.example.myexample.R.layout;
 
-public class Network_08_Activity extends Activity implements View.OnClickListener {
+public class WebView_04_Activity extends Activity implements View.OnClickListener {
 
     WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_network_08);
+        setContentView(layout.activity_webview_04);
 
         webView = (WebView) findViewById(R.id.webView);
         Button btnWeb = (Button) findViewById(R.id.btnWeb);
-        Button btnAsset = (Button) findViewById(R.id.btnAsset);
+        Button btnCurrent = (Button) findViewById(R.id.btnCurrent);
 
         webView.setWebViewClient(new WebViewClient());
 
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setBuiltInZoomControls(true);
 
         btnWeb.setOnClickListener(this);
-        btnAsset.setOnClickListener(this);
+        btnCurrent.setOnClickListener(this);
 
     }
 
@@ -38,14 +37,22 @@ public class Network_08_Activity extends Activity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnWeb:
-                webView.loadUrl("http://www.google.com/");
+                webView.loadUrl("http://www.naver.com");
                 break;
-            case R.id.btnAsset:
-                webView.loadUrl("file:///android_asset/index.html");
-
+            case R.id.btnCurrent:
+                Toast.makeText(this, webView.getUrl(), Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (webView.canGoBack())
+            webView.goBack();
+        else
+            super.onBackPressed();
+
     }
 }

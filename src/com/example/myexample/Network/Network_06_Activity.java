@@ -20,7 +20,7 @@ import java.net.URL;
 import java.util.Vector;
 
 public class Network_06_Activity extends Activity implements View.OnClickListener {
-    // http://whois.kisa.or.kr/openapi/whois.jsp?query=naver.co.kr&key=2015033021490816419014&answer=json
+
     String whois_url = "http://whois.kisa.or.kr/openapi/whois.jsp?key=2015033021490816419014&answer=json&";
     JSONTask JSONTask = new JSONTask();
     EditText input;
@@ -36,6 +36,16 @@ public class Network_06_Activity extends Activity implements View.OnClickListene
         output = (TextView) findViewById(R.id.output);
         button.setOnClickListener(this);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button:
+                String data = input.getText().toString();
+                JSONTask.execute(whois_url + "&query=" + data, null, null);
+
+        }
     }
 
     public class JSONTask extends AsyncTask<String, Void, String> {
@@ -129,16 +139,6 @@ public class Network_06_Activity extends Activity implements View.OnClickListene
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-        }
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button:
-                String data = input.getText().toString();
-                JSONTask.execute(whois_url +"&query="+data, null, null);
 
         }
     }

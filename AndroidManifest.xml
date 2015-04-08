@@ -129,20 +129,17 @@
         <activity android:name=".Network.Network_04_Activity" />
         <activity android:name=".Network.Network_05_Activity" />
         <activity android:name=".Network.Network_06_Activity" />
-        <activity android:name=".Network.Network_07_Activity" />
-        <activity android:name=".Network.Network_08_Activity" />
-        <activity android:name=".Network.Network_09_Activity" />
-        <activity android:name=".Network.Network_10_Activity" />
-        <activity android:name=".Network.Network_11_Activity" />
-        <activity android:name=".Network.Network_12_Activity" />
-        <activity android:name=".Network.Network_13_Activity" />
-        <activity android:name=".Network.Network_14_Activity" />
-        <activity android:name=".Network.Network_15_Activity" />
-        <activity android:name=".Network.Network_16_Activity" />
-        <activity android:name=".Network.Network_17_Activity" />
-        <activity android:name=".Network.Network_18_Activity" />
-        <activity android:name=".Network.Network_19_Activity" />
-        <activity android:name=".Network.Network_20_Activity" />
+
+
+        <activity android:name=".WebView.WebView_Main" />
+        <activity android:name=".WebView.WebView_01_Activity" />
+        <activity android:name=".WebView.WebView_02_Activity" />
+        <activity android:name=".WebView.WebView_03_Activity" />
+        <activity android:name=".WebView.WebView_04_Activity" />
+        <activity android:name=".WebView.WebView_06_Activity" />
+        <activity android:name=".WebView.WebView_07_Activity" />
+        <activity android:name=".WebView.WebView_08_Activity" />
+        <activity android:name=".WebView.WebView_09_Activity" />
 
         <activity android:name=".IntroActivity">
             <intent-filter>
