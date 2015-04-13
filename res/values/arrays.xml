@@ -160,4 +160,16 @@
         <item>웹뷰09</item>
         <item>웹뷰10</item>
     </string-array>
+    <string-array name="location_menu">
+        <item>위치정보01</item>
+        <item>위치정보02</item>
+        <item>위치정보03</item>
+        <item>위치정보04</item>
+        <item>위치정보05</item>
+        <item>위치정보06</item>
+        <item>위치정보07</item>
+        <item>위치정보08</item>
+        <item>위치정보09</item>
+        <item>위치정보10</item>
+    </string-array>
 </resources>
