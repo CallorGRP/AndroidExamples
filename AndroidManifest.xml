@@ -4,19 +4,25 @@
     android:versionCode="1"
     android:versionName="1.0">
 
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" android:theme="@style/AppTheme">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <!-- 뷰 -->
         <activity android:name=".Views.View_Main" />
@@ -97,16 +103,18 @@
         <activity android:name=".Service.Service_01_Activity" />
         <activity android:name=".Service.Service_02_Activity" />
         <activity android:name=".Service.Service_03_Activity" />
+
         <service android:name=".Service.Service_02_Service" />
         <service android:name=".Service.Service_03_Service" />
 
         <activity android:name=".BroadcastReceiver.Receiver_Main" />
         <activity android:name=".BroadcastReceiver.Receiver_01_Activity" />
+
         <receiver android:name=".BroadcastReceiver.Receiver_01_Receiver">
             <intent-filter android:priority="10000">
-                <action android:name="android.intent.action.SCREEN_ON"/>
-                <action android:name="android.intent.action.SCREEN_OFF"/>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
@@ -140,6 +148,10 @@
         <activity android:name=".WebView.WebView_07_Activity" />
         <activity android:name=".WebView.WebView_08_Activity" />
         <activity android:name=".WebView.WebView_09_Activity" />
+
+        <activity android:name=".Location.Location_Main" />
+        <activity android:name=".Location.Location_01_Activity" />
+        <activity android:name=".Location.Location_02_Activity" />
 
         <activity android:name=".IntroActivity">
             <intent-filter>

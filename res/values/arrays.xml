@@ -17,8 +17,6 @@
         <item>프레그먼트</item>
         <item>멀티미디어</item>
         <item>위치 기반 서비스</item>
-        <item>근거리 무선통신</item>
-        <item>센서</item>
         <item>구글Push서비스</item>
     </string-array>
     <string-array name="view_menu">

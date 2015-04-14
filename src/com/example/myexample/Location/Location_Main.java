@@ -1,4 +1,4 @@
-package Location;
+package com.example.myexample.Location;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -21,7 +21,7 @@ public class Location_Main extends ListActivity
         setContentView(R.layout.activity_main);
 
         Resources res = getResources();
-        String[] args = res.getStringArray(R.array.webview_menu);
+        String[] args = res.getStringArray(R.array.location_menu);
 
         setListAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, args));

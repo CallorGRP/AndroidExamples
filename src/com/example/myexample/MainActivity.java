@@ -22,6 +22,8 @@ import com.example.myexample.Views.View_Main;
 import com.example.myexample.WebView.WebView_Main;
 import com.example.myexample.Widgets.Widget_Main;
 
+import com.example.myexample.Location.Location_Main;
+
 public class MainActivity extends ListActivity implements OnItemClickListener {
 
     @Override
@@ -76,6 +78,9 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 break;
             case 13:
                 i = new Intent(this, MultiMedia_Main.class);
+                break;
+            case 14:
+                i = new Intent(this, Location_Main.class);
                 break;
             default:
                 return;
