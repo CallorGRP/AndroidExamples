@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="경도"
+        android:inputType="numberDecimal"
+        android:text="126.97643600000004" />
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="위도"
+        android:inputType="numberDecimal"
+        android:text="37.571619" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경고 시작" />
+</LinearLayout>
