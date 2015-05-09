@@ -154,13 +154,16 @@
         <activity android:name=".Location.Location_02_Activity" />
         <activity android:name=".Location.Location_03_Activity" />
         <activity android:name=".Location.Location_04_Activity" />
+        <activity android:name=".Location.Location_05_Activity" />
+        <activity android:name=".Location.Location_06_Activity" />
+        <activity android:name=".Location.Location_07_Activity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAhLINsM-T_d5CpfUfdVoJLWlAazuF6Rfg" />
+            android:value="AIzaSyDBSVf9rwASWAMUXz7qKTSTOCX0L6RYw9A" />
 
         <activity android:name=".IntroActivity">
             <intent-filter>
