@@ -17,6 +17,7 @@
         <item>프레그먼트</item>
         <item>멀티미디어</item>
         <item>위치 기반 서비스</item>
+        <item>소셜네트워크서비스</item>
         <item>구글Push서비스</item>
     </string-array>
     <string-array name="view_menu">
@@ -169,5 +170,17 @@
         <item>위치정보08</item>
         <item>위치정보09</item>
         <item>위치정보10</item>
+    </string-array>
+    <string-array name="sns_menu">
+        <item>소셜네트워크서비스01</item>
+        <item>소셜네트워크서비스02</item>
+        <item>소셜네트워크서비스03</item>
+        <item>소셜네트워크서비스04</item>
+        <item>소셜네트워크서비스05</item>
+        <item>소셜네트워크서비스06</item>
+        <item>소셜네트워크서비스07</item>
+        <item>소셜네트워크서비스08</item>
+        <item>소셜네트워크서비스09</item>
+        <item>소셜네트워크서비스10</item>
     </string-array>
 </resources>

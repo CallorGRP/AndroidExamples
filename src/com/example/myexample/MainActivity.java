@@ -14,15 +14,15 @@ import com.example.myexample.Activity.Activity_Main;
 import com.example.myexample.AdapterView.AdapterView_Main;
 import com.example.myexample.BroadcastReceiver.Receiver_Main;
 import com.example.myexample.Layouts.Layout_Main;
+import com.example.myexample.Location.Location_Main;
 import com.example.myexample.MultiMedia.MultiMedia_Main;
 import com.example.myexample.Network.Network_Main;
+import com.example.myexample.SNS.SNS_Main;
 import com.example.myexample.Service.Service_Main;
 import com.example.myexample.Thread.Thread_Main;
 import com.example.myexample.Views.View_Main;
 import com.example.myexample.WebView.WebView_Main;
 import com.example.myexample.Widgets.Widget_Main;
-
-import com.example.myexample.Location.Location_Main;
 
 public class MainActivity extends ListActivity implements OnItemClickListener {
 
@@ -81,6 +81,9 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
                 break;
             case 14:
                 i = new Intent(this, Location_Main.class);
+                break;
+            case 15:
+                i = new Intent(this, SNS_Main.class);
                 break;
             default:
                 return;
