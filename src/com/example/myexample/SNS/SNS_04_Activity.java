@@ -39,7 +39,7 @@ public class SNS_04_Activity extends Activity {
 
         callbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions(Arrays.asList("email"));
+        loginButton.setReadPermissions(Arrays.asList("public_profile", "email", "user_friends"));
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -60,13 +60,12 @@ public class SNS_04_Activity extends Activity {
 
         ShareLinkContent contentLink = new ShareLinkContent.Builder()
                 .setContentUrl(Uri.parse("http://www.naver.com"))
-                .setContentDescription("네이버의 메인화면")
+                .setContentDescription("네이버의 메인화면입니다.")
                 .setContentTitle("네이버")
                 .build();
 
         ShareButton btn_share1 = (ShareButton) findViewById(R.id.btn_share1);
         btn_share1.setShareContent(contentLink);
-
 
         AssetManager assetmanager = getResources().getAssets();
         Bitmap bitmap = null;
@@ -79,6 +78,7 @@ public class SNS_04_Activity extends Activity {
 
         SharePhoto photo = new SharePhoto.Builder()
                 .setBitmap(bitmap)
+                .setCaption("페라리 사진")
                 .build();
 
         SharePhotoContent contentPhoto = new SharePhotoContent.Builder()
@@ -88,7 +88,7 @@ public class SNS_04_Activity extends Activity {
         ShareButton btn_share2 = (ShareButton) findViewById(R.id.btn_share2);
         btn_share2.setShareContent(contentPhoto);
 
-        Uri videoFileUri = Uri.parse("https://www.youtube.com/v/lGelRr_7gDE");
+        Uri videoFileUri = Uri.parse("file://android_asset/Video.mp4");
         ShareVideo video = new ShareVideo.Builder()
                 .setLocalUrl(videoFileUri)
                 .build();
