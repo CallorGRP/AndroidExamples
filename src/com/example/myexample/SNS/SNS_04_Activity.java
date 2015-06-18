@@ -20,8 +20,6 @@ import com.facebook.login.widget.LoginButton;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
-import com.facebook.share.model.ShareVideo;
-import com.facebook.share.model.ShareVideoContent;
 import com.facebook.share.widget.ShareButton;
 
 import java.io.InputStream;
@@ -87,17 +85,6 @@ public class SNS_04_Activity extends Activity {
 
         ShareButton btn_share2 = (ShareButton) findViewById(R.id.btn_share2);
         btn_share2.setShareContent(contentPhoto);
-
-        Uri videoFileUri = Uri.parse("file://android_asset/Video.mp4");
-        ShareVideo video = new ShareVideo.Builder()
-                .setLocalUrl(videoFileUri)
-                .build();
-        ShareVideoContent contentVideo = new ShareVideoContent.Builder()
-                .setVideo(video)
-                .build();
-
-        ShareButton btn_share3 = (ShareButton) findViewById(R.id.btn_share3);
-        btn_share3.setShareContent(contentVideo);
 
     }
 
