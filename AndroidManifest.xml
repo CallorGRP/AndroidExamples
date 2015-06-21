@@ -163,6 +163,7 @@
         <activity android:name=".SNS.SNS_Main" />
         <activity android:name=".SNS.SNS_01_Activity" />
         <activity android:name=".SNS.SNS_02_Activity" />
+        <activity android:name=".SNS.SNS_03_Activity" />
         <activity android:name=".SNS.SNS_04_Activity" />
 
         <meta-data
@@ -177,7 +178,7 @@
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider988148521204546"
+            android:authorities="com.facebook.app.FacebookContentProvider563293120478760"
             android:exported="true" />
 
         <meta-data
