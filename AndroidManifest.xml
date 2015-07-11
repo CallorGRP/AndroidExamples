@@ -5,7 +5,7 @@
     android:versionName="1.0">
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="15"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -165,6 +165,7 @@
         <activity android:name=".SNS.SNS_02_Activity" />
         <activity android:name=".SNS.SNS_03_Activity" />
         <activity android:name=".SNS.SNS_04_Activity" />
+        <activity android:name=".SNS.SNS_05_Activity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
