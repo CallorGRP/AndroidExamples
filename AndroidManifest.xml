@@ -171,6 +171,9 @@
         <activity android:name=".SNS.SNS_08_Activity" />
         <activity android:name=".SNS.SNS_09_Activity" />
         <activity android:name=".SNS.SNS_10_Activity" />
+        <activity android:name=".SNS.SNS_11_Activity" />
+        <activity android:name=".SNS.SNS_12_Activity" />
+        <activity android:name=".SNS.SNS_13_Activity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
