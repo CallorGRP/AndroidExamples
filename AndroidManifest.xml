@@ -166,6 +166,11 @@
         <activity android:name=".SNS.SNS_03_Activity" />
         <activity android:name=".SNS.SNS_04_Activity" />
         <activity android:name=".SNS.SNS_05_Activity" />
+        <activity android:name=".SNS.SNS_06_Activity" />
+        <activity android:name=".SNS.SNS_07_Activity" />
+        <activity android:name=".SNS.SNS_08_Activity" />
+        <activity android:name=".SNS.SNS_09_Activity" />
+        <activity android:name=".SNS.SNS_10_Activity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -196,6 +201,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="49883bd7500dc16ab39c1b4bfc9eaebdb3bf315b" />
     </application>
 
 </manifest>
