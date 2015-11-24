@@ -31,7 +31,7 @@ public class Location_05_Activity extends FragmentActivity implements View.OnCli
 
         etLatitude = (EditText) findViewById(R.id.etLatitude);
         etLongitude = (EditText) findViewById(R.id.etLongitude);
-        btnMove = (Button)findViewById(R.id.btnMove);
+        btnMove = (Button) findViewById(R.id.btnMove);
 
         btnMove.setOnClickListener(this);
 

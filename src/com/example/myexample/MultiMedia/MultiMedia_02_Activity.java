@@ -16,6 +16,7 @@ import java.io.IOException;
 public class MultiMedia_02_Activity extends Activity implements View.OnClickListener {
 
     MediaPlayer player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +72,7 @@ public class MultiMedia_02_Activity extends Activity implements View.OnClickList
     @Override
     protected void onDestroy() {
 
-        if ( player != null )
+        if (player != null)
             player.release();
         super.onDestroy();
     }

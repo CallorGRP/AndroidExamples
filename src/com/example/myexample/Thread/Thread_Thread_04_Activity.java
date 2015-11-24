@@ -51,7 +51,7 @@ public class Thread_Thread_04_Activity extends Activity implements View.OnClickL
             case R.id.btn1:
                 try {
                     File file;
-                    file = new File(this.getFilesDir().getPath()+"/test.txt");
+                    file = new File(this.getFilesDir().getPath() + "/test.txt");
 
                     FileInputStream fis = new FileInputStream(file);
 

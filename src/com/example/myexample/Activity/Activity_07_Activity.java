@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.example.myexample.R;
 
-public class Activity_07_Activity extends Activity implements View.OnClickListener  {
+public class Activity_07_Activity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2,18 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btnStart"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="시작" />
+
     <Button
         android:id="@+id/btnStop"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="중지" />
+
     <Button
         android:id="@+id/btnGetting"
         android:layout_width="fill_parent"

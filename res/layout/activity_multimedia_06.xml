@@ -2,24 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btnStartPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="비디오재생"
-        />
+        android:text="비디오재생" />
+
     <Button
         android:id="@+id/btnStopPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="비디오재생중지"
-        />
+        android:text="비디오재생중지" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/videoLayout"
-        />
+        android:id="@+id/videoLayout" />
 
 </LinearLayout>

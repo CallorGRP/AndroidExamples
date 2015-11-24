@@ -13,7 +13,7 @@ public class Service_03_Service extends Service {
     MediaPlayer music;
 
     public class LocalBinder extends Binder {
-        Service_03_Service getService(){
+        Service_03_Service getService() {
             return Service_03_Service.this;
         }
     }

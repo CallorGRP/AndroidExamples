@@ -1,25 +1,47 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="#000000" android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="#ffffff" android:singleLine="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:singleLine="true"
         android:text="안녕하세요. 텍스트뷰 예제입니다. This is a TextView.안녕하세요. 텍스트뷰 예제입니다. This is a TextView." />
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="#ffffff" android:ellipsize="start" android:singleLine="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ellipsize="start"
+        android:singleLine="true"
         android:text="안녕하세요. 텍스트뷰 예제입니다. This is a TextView.안녕하세요. 텍스트뷰 예제입니다. This is a TextView." />
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="#ffffff" android:ellipsize="middle" android:singleLine="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ellipsize="middle"
+        android:singleLine="true"
         android:text="안녕하세요. 텍스트뷰 예제입니다. This is a TextView.안녕하세요. 텍스트뷰 예제입니다. This is a TextView." />
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="#ffffff" android:ellipsize="end" android:singleLine="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ellipsize="end"
+        android:singleLine="true"
         android:text="안녕하세요. 텍스트뷰 예제입니다. This is a TextView.안녕하세요. 텍스트뷰 예제입니다. This is a TextView." />
 
-    <TextView android:id="@+id/tvMarquee" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:background="#ffffff"
-        android:ellipsize="marquee" android:singleLine="true"
+    <TextView
+        android:id="@+id/tvMarquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ellipsize="marquee"
+        android:singleLine="true"
         android:text="안녕하세요. 텍스트뷰 예제입니다. This is a TextView.안녕하세요. 텍스트뷰 예제입니다. This is a TextView." />
 
 </LinearLayout>

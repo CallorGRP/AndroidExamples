@@ -31,7 +31,7 @@ public class Location_06_Activity extends FragmentActivity implements View.OnCli
 
         etLatitude = (EditText) findViewById(R.id.etLatitude);
         etLongitude = (EditText) findViewById(R.id.etLongitude);
-        btnMove = (Button)findViewById(R.id.btnMove);
+        btnMove = (Button) findViewById(R.id.btnMove);
 
         btnMove.setOnClickListener(this);
 
@@ -47,7 +47,7 @@ public class Location_06_Activity extends FragmentActivity implements View.OnCli
 
                 LatLng curPoint = new LatLng(latitude, longitude);
                 map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-                map.animateCamera(CameraUpdateFactory.newLatLngZoom(curPoint,15));
+                map.animateCamera(CameraUpdateFactory.newLatLngZoom(curPoint, 15));
 
                 map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 

@@ -19,7 +19,7 @@ public class SNS_13_Activity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        TwitterAuthConfig authConfig =  new TwitterAuthConfig("vjaoe0JxKau4jFEX4jHVK8BWp", "92wRFWQWHEasfZwT4co7qVADMzftz2wGrbtiGwymAbeZ3raXfV");
+        TwitterAuthConfig authConfig = new TwitterAuthConfig("vjaoe0JxKau4jFEX4jHVK8BWp", "92wRFWQWHEasfZwT4co7qVADMzftz2wGrbtiGwymAbeZ3raXfV");
         Fabric.with(this, new TwitterCore(authConfig), new TweetComposer());
 
         setContentView(R.layout.activity_sns_13);

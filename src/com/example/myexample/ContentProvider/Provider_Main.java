@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import com.example.myexample.R;
 
 public class Provider_Main extends ListActivity
-implements
+        implements
         OnItemClickListener {
 
     @Override
@@ -36,7 +36,7 @@ implements
         Intent i = null;
 
         try {
-            String className = String.format(getPackageName() + ".BroadcastReceiver.BroadcastReceiver_%02d_Activity",arg2+1);
+            String className = String.format(getPackageName() + ".BroadcastReceiver.BroadcastReceiver_%02d_Activity", arg2 + 1);
             i = new Intent(this, Class.forName(className));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

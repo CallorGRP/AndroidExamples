@@ -17,7 +17,7 @@ public class Activity_01_Activity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_activity_01);
 
-        Button btnStart = (Button)findViewById(R.id.btnStart);
+        Button btnStart = (Button) findViewById(R.id.btnStart);
         btnStart.setOnClickListener(this);
     }
 

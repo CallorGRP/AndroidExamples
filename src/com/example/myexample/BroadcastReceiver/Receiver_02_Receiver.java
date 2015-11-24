@@ -15,10 +15,10 @@ public class Receiver_02_Receiver extends BroadcastReceiver {
         if ("android.provider.Telephony.SMS_RECEIVED".equals(intent.getAction())) {
             // SMS 메시지를 파싱합니다.
             Bundle bundle = intent.getExtras();
-            Object messages[] = (Object[])bundle.get("pdus");
+            Object messages[] = (Object[]) bundle.get("pdus");
             SmsMessage smsMessage[] = new SmsMessage[messages.length];
 
-            for(int i = 0; i < messages.length; i++) {
+            for (int i = 0; i < messages.length; i++) {
                 smsMessage[i] = SmsMessage.createFromPdu((byte[]) messages[i]);
             }
 
@@ -28,7 +28,7 @@ public class Receiver_02_Receiver extends BroadcastReceiver {
             String origNumber = smsMessage[0].getOriginatingAddress();
 
             String message = smsMessage[0].getMessageBody().toString();
-            Log.d("문자 내용", "발신자 : "+origNumber+", 내용 : " + message);
+            Log.d("문자 내용", "발신자 : " + origNumber + ", 내용 : " + message);
 
         }
     }

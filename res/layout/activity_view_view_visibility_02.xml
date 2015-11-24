@@ -1,18 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button android:id="@+id/btn1" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:background="#ff0000" android:text="Button1"
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:text="Button1"
         android:visibility="visible" />
 
-    <Button android:id="@+id/btnVisible" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="visible" android:visibility="visible" />
-
-    <Button android:id="@+id/btnInvisible" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="invisible"
+    <Button
+        android:id="@+id/btnVisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visible"
         android:visibility="visible" />
 
-    <Button android:id="@+id/btnGone" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="gone" android:visibility="visible" />
+    <Button
+        android:id="@+id/btnInvisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="invisible"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnGone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gone"
+        android:visibility="visible" />
 
 </LinearLayout>

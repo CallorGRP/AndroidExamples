@@ -36,7 +36,7 @@ public class Receiver_Main extends ListActivity
         Intent i = null;
 
         try {
-            String className = String.format(getPackageName() + ".BroadcastReceiver.BroadcastReceiver_%02d_Activity",arg2+1);
+            String className = String.format(getPackageName() + ".BroadcastReceiver.BroadcastReceiver_%02d_Activity", arg2 + 1);
             i = new Intent(this, Class.forName(className));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

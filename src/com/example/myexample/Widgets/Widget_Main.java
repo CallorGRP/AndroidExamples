@@ -40,7 +40,7 @@ public class Widget_Main extends ListActivity
                 i = new Intent(this, Thread_Thread_01_Activity.class);
                 break;
                 /*
-			case 1 :
+            case 1 :
 				i = new Intent(this, Widget_TextView_02_Activity.class);
 				break;
 			case 2 :

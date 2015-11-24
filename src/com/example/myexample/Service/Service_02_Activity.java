@@ -20,7 +20,7 @@ public class Service_02_Activity extends Activity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_activity_08);
 
-        serviceIntent = new Intent(this,com.example.myexample.Service.Service_02_Service.class);
+        serviceIntent = new Intent(this, com.example.myexample.Service.Service_02_Service.class);
 
         Button btnStart = (Button) findViewById(R.id.btnStart);
         Button btnStop = (Button) findViewById(R.id.btnStop);

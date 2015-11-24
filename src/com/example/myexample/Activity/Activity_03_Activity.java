@@ -17,7 +17,7 @@ public class Activity_03_Activity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_activity_01);
 
-        Button btnStart = (Button)findViewById(R.id.btnStart);
+        Button btnStart = (Button) findViewById(R.id.btnStart);
         btnStart.setOnClickListener(this);
     }
 
@@ -27,7 +27,7 @@ public class Activity_03_Activity extends Activity implements View.OnClickListen
         switch (v.getId()) {
             case R.id.btnStart:
                 Intent i = new Intent(this, Activity_04_Activity.class);
-                i.putExtra("data","ABCD!@#");
+                i.putExtra("data", "ABCD!@#");
                 startActivity(i);
 
                 break;

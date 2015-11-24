@@ -2,17 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btnAlbum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사진가져오기"/>
+        android:text="사진가져오기" />
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/image_album"
-        />
+        android:id="@+id/image_album" />
 
 </LinearLayout>

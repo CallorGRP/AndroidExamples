@@ -43,13 +43,13 @@ public class Network_05_Activity extends ListActivity {
             try {
                 DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
                 DocumentBuilder parser = f.newDocumentBuilder();
-                Document xmlDoc =  parser.parse(params[0]);
+                Document xmlDoc = parser.parse(params[0]);
 
                 Element root = xmlDoc.getDocumentElement();
                 NodeList items = root.getElementsByTagName("item");
 
-                for ( int i = 0 ; i < items.getLength() ; i++){
-                    Element item = (Element)items.item(i);
+                for (int i = 0; i < items.getLength(); i++) {
+                    Element item = (Element) items.item(i);
                     Node title = item.getElementsByTagName("title").item(0);
                     vTitle.add(title.getTextContent());
                 }

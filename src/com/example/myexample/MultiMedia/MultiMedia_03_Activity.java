@@ -62,11 +62,11 @@ public class MultiMedia_03_Activity extends Activity implements View.OnClickList
                 }
                 break;
             case R.id.btnVolUp:
-                manager.setStreamVolume(AudioManager.STREAM_MUSIC,volume++,AudioManager.FLAG_SHOW_UI);
+                manager.setStreamVolume(AudioManager.STREAM_MUSIC, volume++, AudioManager.FLAG_SHOW_UI);
                 txtVolume.setText(String.valueOf(volume));
                 break;
             case R.id.btnVolDown:
-                manager.setStreamVolume(AudioManager.STREAM_MUSIC,volume--,AudioManager.FLAG_SHOW_UI);
+                manager.setStreamVolume(AudioManager.STREAM_MUSIC, volume--, AudioManager.FLAG_SHOW_UI);
                 txtVolume.setText(String.valueOf(volume));
                 break;
             default:

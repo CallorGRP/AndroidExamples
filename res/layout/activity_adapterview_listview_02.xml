@@ -1,7 +1,13 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:background="#ff0000"
-        android:padding="5dp" android:src="@drawable/imageview_origin"></ImageView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:src="@drawable/imageview_origin"></ImageView>
 
 </LinearLayout>

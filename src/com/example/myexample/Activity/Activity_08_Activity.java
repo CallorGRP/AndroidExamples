@@ -18,8 +18,8 @@ public class Activity_08_Activity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_activity_07);
 
-        Button btnView = (Button)findViewById(R.id.btnView);
-        Button btnDial = (Button)findViewById(R.id.btnDial);
+        Button btnView = (Button) findViewById(R.id.btnView);
+        Button btnDial = (Button) findViewById(R.id.btnDial);
         btnView.setOnClickListener(this);
         btnDial.setOnClickListener(this);
     }

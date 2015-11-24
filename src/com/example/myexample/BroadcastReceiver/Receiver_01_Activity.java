@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.myexample.R;
 
-public class Receiver_01_Activity extends Activity implements View.OnClickListener{
+public class Receiver_01_Activity extends Activity implements View.OnClickListener {
 
     Receiver_01_Receiver myReceiver = new Receiver_01_Receiver();
 
@@ -18,8 +18,8 @@ public class Receiver_01_Activity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receiver_01);
 
-        Button btnRegist = (Button)findViewById(R.id.btnRegist);
-        Button btnUnregist = (Button)findViewById(R.id.btnUnRegist);
+        Button btnRegist = (Button) findViewById(R.id.btnRegist);
+        Button btnUnregist = (Button) findViewById(R.id.btnUnRegist);
 
         btnRegist.setOnClickListener(this);
         btnUnregist.setOnClickListener(this);

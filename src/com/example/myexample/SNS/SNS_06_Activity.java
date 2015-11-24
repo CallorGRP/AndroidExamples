@@ -28,12 +28,12 @@ public class SNS_06_Activity extends Activity {
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
-                Toast.makeText(SNS_06_Activity.this, "twitter login suceess!!",Toast.LENGTH_LONG).show();
+                Toast.makeText(SNS_06_Activity.this, "twitter login suceess!!", Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void failure(TwitterException exception) {
-                Toast.makeText(SNS_06_Activity.this, "twitter login failed!!",Toast.LENGTH_LONG).show();
+                Toast.makeText(SNS_06_Activity.this, "twitter login failed!!", Toast.LENGTH_LONG).show();
             }
         });
 

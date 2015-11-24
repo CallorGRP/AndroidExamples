@@ -22,7 +22,7 @@ public class MultiMedia_08_Activity extends Activity implements View.OnClickList
         setContentView(R.layout.activity_multimedia_08);
 
         Button btnCamera = (Button) findViewById(R.id.btnCamera);
-        image_camera = (ImageView)findViewById(R.id.image_camera);
+        image_camera = (ImageView) findViewById(R.id.image_camera);
         btnCamera.setOnClickListener(this);
 
     }
@@ -44,7 +44,7 @@ public class MultiMedia_08_Activity extends Activity implements View.OnClickList
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQ_CAMERA) {
             if (resultCode == Activity.RESULT_OK) {
-                Bitmap bitmap = (Bitmap)data.getExtras().get("data");
+                Bitmap bitmap = (Bitmap) data.getExtras().get("data");
                 image_camera.setImageBitmap(bitmap);
             }
         }

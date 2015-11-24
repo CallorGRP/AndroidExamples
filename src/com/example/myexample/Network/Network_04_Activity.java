@@ -35,7 +35,7 @@ public class Network_04_Activity extends ListActivity {
 
         @Override
         protected Vector<String> doInBackground(String... params) {
-           try {
+            try {
                 XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
                 factory.setNamespaceAware(true);
                 XmlPullParser xpp = factory.newPullParser();

@@ -38,7 +38,7 @@ public class SNS_07_Activity extends Activity {
 
             @Override
             public void failure(TwitterException exception) {
-                Toast.makeText(SNS_07_Activity.this,"Tweet load failed",Toast.LENGTH_LONG).show();
+                Toast.makeText(SNS_07_Activity.this, "Tweet load failed", Toast.LENGTH_LONG).show();
             }
         });
 

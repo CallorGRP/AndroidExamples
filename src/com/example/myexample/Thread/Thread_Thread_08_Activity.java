@@ -1,12 +1,12 @@
 package com.example.myexample.Thread;
 
-        import android.app.Activity;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.TextView;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-        import com.example.myexample.R;
+import com.example.myexample.R;
 
 public class Thread_Thread_08_Activity extends Activity implements View.OnClickListener {
     TextView textView;

@@ -1,19 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="이름을 입력하세요." />
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:hint="나이를 입력하세요." android:numeric="integer" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="나이를 입력하세요."
+        android:numeric="integer" />
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:hint="전화번호를 입력하세요." android:phoneNumber="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호를 입력하세요."
+        android:phoneNumber="true" />
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:digits="aeiou" android:hint="영문 모음만 입력하세요(aeiou)" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="aeiou"
+        android:hint="영문 모음만 입력하세요(aeiou)" />
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:hint="비밀번호를 입력하세요" android:password="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요"
+        android:password="true" />
 
 </LinearLayout>

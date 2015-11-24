@@ -14,13 +14,14 @@ import com.example.myexample.R;
 public class Thread_Thread_12_Activity extends Activity implements View.OnClickListener {
     Button btn1;
     ProgressBar pb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thread_thread_12);
 
         btn1 = (Button) findViewById(R.id.btn1);
-        pb = (ProgressBar)findViewById(R.id.progressBar);
+        pb = (ProgressBar) findViewById(R.id.progressBar);
 
         btn1.setOnClickListener(this);
     }

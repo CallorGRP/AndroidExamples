@@ -21,12 +21,13 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
 
-public class Location_07_Activity extends FragmentActivity  {
+public class Location_07_Activity extends FragmentActivity {
     private LocationManager manager;
     private String provider;
     MyListener gpsListener = new MyListener();
     GoogleMap map;
     boolean isMoved = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,7 @@ public class Location_07_Activity extends FragmentActivity  {
 
     private class MyListener implements LocationListener {
         public void onLocationChanged(Location location) {
-            if ( !isMoved ) {
+            if (!isMoved) {
                 isMoved = true;
                 Double latitude = location.getLatitude();
                 Double longitude = location.getLongitude();

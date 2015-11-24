@@ -91,7 +91,7 @@ public class Location_02_Activity extends Activity implements OnClickListener {
                     message = provider + ": 서비스가 일시적으로 불가능합니다.";
                     break;
             }
-            Toast.makeText(Location_02_Activity.this,message,Toast.LENGTH_SHORT).show();
+            Toast.makeText(Location_02_Activity.this, message, Toast.LENGTH_SHORT).show();
         }
     }
 

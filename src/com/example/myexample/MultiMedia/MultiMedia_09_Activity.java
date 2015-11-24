@@ -49,7 +49,7 @@ public class MultiMedia_09_Activity extends Activity implements View.OnClickList
         if (requestCode == REQ_ALBUM) {
             if (resultCode == Activity.RESULT_OK) {
                 try {
-                    Bitmap image_bitmap 	= MediaStore.Images.Media.getBitmap(getContentResolver(), data.getData());
+                    Bitmap image_bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), data.getData());
 
                     image_album.setImageBitmap(image_bitmap);
                 } catch (IOException e) {
