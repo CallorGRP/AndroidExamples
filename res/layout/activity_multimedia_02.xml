@@ -1,33 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="음악재생"
-        android:textSize="40sp" />
-
-    <Button
-        android:id="@+id/btnStartResource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="내부 리소스 재생하기" />
-
-    <Button
-        android:id="@+id/btnStartFile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SD카드 파일 재생하기" />
-
-    <Button
-        android:id="@+id/btnStartStream"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="웹 스트리밍 재생하기" />
-
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView android:id="@+id/textView2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:text="음악재생"
+		android:textSize="40sp" />
+	<Button android:id="@+id/btnStartResource"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="내부 리소스 재생하기" />
+	<Button android:id="@+id/btnStartFile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="SD카드 파일 재생하기" />
+	<Button android:id="@+id/btnStartStream"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="웹 스트리밍 재생하기" />
 </LinearLayout>

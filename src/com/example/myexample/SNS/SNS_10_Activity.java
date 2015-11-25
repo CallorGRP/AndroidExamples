@@ -1,6 +1,5 @@
 package com.example.myexample.SNS;
 
-
 import android.app.ListActivity;
 import android.os.Bundle;
 
@@ -26,7 +25,6 @@ public class SNS_10_Activity extends ListActivity {
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this, userTimeline);
         setListAdapter(adapter);
     }
-
 
 }
 

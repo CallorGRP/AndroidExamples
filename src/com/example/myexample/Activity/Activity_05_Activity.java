@@ -25,7 +25,6 @@ public class Activity_05_Activity extends Activity implements View.OnClickListen
         btnStart.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

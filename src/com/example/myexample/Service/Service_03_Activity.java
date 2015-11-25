@@ -59,7 +59,6 @@ public class Service_03_Activity extends Activity implements View.OnClickListene
             case R.id.btnPause:
                 boundService.pauseMusic();
 
-
                 break;
             case R.id.btnStop:
 
@@ -76,6 +75,5 @@ public class Service_03_Activity extends Activity implements View.OnClickListene
         unbindService(mConnection);
         super.onDestroy();
     }
-
 
 }

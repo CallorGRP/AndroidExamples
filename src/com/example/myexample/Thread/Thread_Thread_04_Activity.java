@@ -22,7 +22,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
-import java.net.URI;
 
 public class Thread_Thread_04_Activity extends Activity implements View.OnClickListener {
 

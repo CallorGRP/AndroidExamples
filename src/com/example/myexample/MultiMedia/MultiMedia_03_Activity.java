@@ -45,7 +45,6 @@ public class MultiMedia_03_Activity extends Activity implements View.OnClickList
 
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

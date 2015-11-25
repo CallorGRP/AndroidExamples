@@ -9,16 +9,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 
-import com.example.myexample.AdapterView.AdapterView_GridView_01_Activity;
-import com.example.myexample.AdapterView.AdapterView_GridView_02_Activity;
-import com.example.myexample.AdapterView.AdapterView_GridView_03_Activity;
-import com.example.myexample.AdapterView.AdapterView_GridView_04_Activity;
-import com.example.myexample.AdapterView.AdapterView_ListView_01_Activity;
-import com.example.myexample.AdapterView.AdapterView_ListView_02_Activity;
-import com.example.myexample.AdapterView.AdapterView_ListView_03_Activity;
-import com.example.myexample.AdapterView.AdapterView_ListView_04_Activity;
-import com.example.myexample.AdapterView.AdapterView_ListView_05_Activity;
-import com.example.myexample.AdapterView.AdapterView_Spinner_01_Activity;
 import com.example.myexample.R;
 
 public class Activity_Main extends ListActivity
@@ -33,8 +23,7 @@ public class Activity_Main extends ListActivity
         Resources res = getResources();
         String[] args = res.getStringArray(R.array.activity_menu);
 
-        setListAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, args));
+        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, args));
 
         getListView().setOnItemClickListener(this);
     }

@@ -17,7 +17,6 @@ public class IntroActivity extends Activity {
     private static final String TWITTER_KEY = "vjaoe0JxKau4jFEX4jHVK8BWp";
     private static final String TWITTER_SECRET = "92wRFWQWHEasfZwT4co7qVADMzftz2wGrbtiGwymAbeZ3raXfV";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +25,6 @@ public class IntroActivity extends Activity {
         setContentView(R.layout.intro);
 
         TextView tv = (TextView) findViewById(R.id.textView1);
-
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

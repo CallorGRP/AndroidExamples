@@ -24,17 +24,11 @@ public class Thread_Thread_11_Activity extends Activity implements View.OnClickL
                 default:
                     break;
 
-
             }
         }
     };
 
     TextView textView;
-
-    class MessageObject {
-        String text;
-        TextView textView;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +36,6 @@ public class Thread_Thread_11_Activity extends Activity implements View.OnClickL
         setContentView(R.layout.activity_thread_thread_06);
         Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(this);
-
 
     }
 
@@ -61,5 +54,10 @@ public class Thread_Thread_11_Activity extends Activity implements View.OnClickL
             }
         }).start();
 
+    }
+
+    class MessageObject {
+        String text;
+        TextView textView;
     }
 }

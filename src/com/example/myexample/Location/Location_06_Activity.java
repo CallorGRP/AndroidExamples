@@ -8,21 +8,18 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.myexample.R;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
-
 public class Location_06_Activity extends FragmentActivity implements View.OnClickListener {
-    private GoogleMap map;
-    private LocationManager locationManager;
-    private String provider;
     EditText etLatitude;
     EditText etLongitude;
     Button btnMove;
+    private GoogleMap map;
+    private LocationManager locationManager;
+    private String provider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +33,6 @@ public class Location_06_Activity extends FragmentActivity implements View.OnCli
         btnMove.setOnClickListener(this);
 
     }
-
 
     @Override
     public void onClick(View v) {

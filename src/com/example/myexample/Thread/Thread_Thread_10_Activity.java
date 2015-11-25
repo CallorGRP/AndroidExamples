@@ -24,7 +24,6 @@ public class Thread_Thread_10_Activity extends Activity implements View.OnClickL
                 default:
                     break;
 
-
             }
         }
     };
@@ -35,7 +34,6 @@ public class Thread_Thread_10_Activity extends Activity implements View.OnClickL
         setContentView(R.layout.activity_thread_thread_06);
         Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(this);
-
 
     }
 

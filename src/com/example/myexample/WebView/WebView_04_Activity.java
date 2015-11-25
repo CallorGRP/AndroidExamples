@@ -26,12 +26,10 @@ public class WebView_04_Activity extends Activity implements View.OnClickListene
 
         webView.setWebViewClient(new WebViewClient());
 
-
         btnWeb.setOnClickListener(this);
         btnCurrent.setOnClickListener(this);
 
     }
-
 
     @Override
     public void onClick(View v) {

@@ -1,45 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/etLongitude"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="경도"
-            android:inputType="numberDecimal"
-            android:text="126.97643600000004"
-            android:layout_weight="0.3" />
-
-        <EditText
-            android:id="@+id/etLatitude"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="위도"
-            android:inputType="numberDecimal"
-            android:text="37.571619"
-            android:layout_weight="0.3" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnMove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="이동하기" />
-
-    <fragment
-        android:id="@+id/map"
-        class="com.google.android.gms.maps.MapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<EditText android:id="@+id/etLongitude"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_weight="0.3"
+			android:hint="경도"
+			android:inputType="numberDecimal"
+			android:text="126.97643600000004" />
+		<EditText android:id="@+id/etLatitude"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_weight="0.3"
+			android:hint="위도"
+			android:inputType="numberDecimal"
+			android:text="37.571619" />
+	</LinearLayout>
+	<Button android:id="@+id/btnMove"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="이동하기" />
+	<fragment android:id="@+id/map"
+		class="com.google.android.gms.maps.MapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
 </LinearLayout>

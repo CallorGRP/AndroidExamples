@@ -31,12 +31,10 @@ public class WebView_07_Activity extends Activity implements View.OnClickListene
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
 
-
         btnWeb.setOnClickListener(this);
         btnCurrent.setOnClickListener(this);
 
     }
-
 
     @Override
     public void onClick(View v) {

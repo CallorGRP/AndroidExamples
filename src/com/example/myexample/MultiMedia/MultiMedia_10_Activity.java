@@ -21,7 +21,44 @@ public class MultiMedia_10_Activity extends Activity {
     private Camera camera;
     private ImageView imageview;
     private boolean inProgress;
+    private Camera.PictureCallback takePicture = new Camera.PictureCallback() {
 
+        @Override
+        public void onPictureTaken(byte[] data, Camera camera) {
+            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+            imageview.setImageBitmap(bitmap);
+            camera.startPreview();
+            inProgress = false;
+
+        }
+    };
+    private SurfaceHolder.Callback surfaceListener = new SurfaceHolder.Callback() {
+
+        @Override
+        public void surfaceDestroyed(SurfaceHolder holder) {
+            camera.release();
+            camera = null;
+        }
+
+        @Override
+        public void surfaceCreated(SurfaceHolder holder) {
+            camera = Camera.open();
+
+            try {
+                camera.setPreviewDisplay(holder);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+            Camera.Parameters parameters = camera.getParameters();
+            parameters.setPreviewSize(width, height);
+            camera.startPreview();
+
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,47 +87,5 @@ public class MultiMedia_10_Activity extends Activity {
                 }
         );
     }
-
-
-    private Camera.PictureCallback takePicture = new Camera.PictureCallback() {
-
-        @Override
-        public void onPictureTaken(byte[] data, Camera camera) {
-            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-            imageview.setImageBitmap(bitmap);
-            camera.startPreview();
-            inProgress = false;
-
-
-        }
-    };
-
-    private SurfaceHolder.Callback surfaceListener = new SurfaceHolder.Callback() {
-
-        @Override
-        public void surfaceDestroyed(SurfaceHolder holder) {
-            camera.release();
-            camera = null;
-        }
-
-        @Override
-        public void surfaceCreated(SurfaceHolder holder) {
-            camera = Camera.open();
-
-            try {
-                camera.setPreviewDisplay(holder);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        @Override
-        public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-            Camera.Parameters parameters = camera.getParameters();
-            parameters.setPreviewSize(width, height);
-            camera.startPreview();
-
-        }
-    };
 }
 

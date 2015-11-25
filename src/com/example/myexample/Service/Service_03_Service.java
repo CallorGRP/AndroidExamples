@@ -12,12 +12,6 @@ public class Service_03_Service extends Service {
     private final IBinder mBinder = new LocalBinder();
     MediaPlayer music;
 
-    public class LocalBinder extends Binder {
-        Service_03_Service getService() {
-            return Service_03_Service.this;
-        }
-    }
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -59,5 +53,11 @@ public class Service_03_Service extends Service {
 
     public void pauseMusic() {
         music.pause();
+    }
+
+    public class LocalBinder extends Binder {
+        Service_03_Service getService() {
+            return Service_03_Service.this;
+        }
     }
 }

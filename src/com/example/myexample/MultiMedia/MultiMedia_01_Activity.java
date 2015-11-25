@@ -28,7 +28,6 @@ public class MultiMedia_01_Activity extends Activity implements View.OnClickList
         music = MediaPlayer.create(this, R.raw.konan);
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

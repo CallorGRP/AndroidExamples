@@ -36,6 +36,5 @@ public class SNS_02_Activity extends FragmentActivity {
         AppEventsLogger.deactivateApp(this);
     }
 
-
 }
 

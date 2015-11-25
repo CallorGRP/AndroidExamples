@@ -1,6 +1,5 @@
 package com.example.myexample.SNS;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +26,6 @@ public class SNS_13_Activity extends Activity implements View.OnClickListener {
         btn_tweet.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -35,7 +33,6 @@ public class SNS_13_Activity extends Activity implements View.OnClickListener {
                 TweetComposer.Builder builder = new TweetComposer.Builder(this)
                         .text("트윗을 작성합니다.");
                 builder.show();
-
 
                 break;
         }

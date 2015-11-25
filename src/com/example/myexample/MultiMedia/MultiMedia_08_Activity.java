@@ -10,7 +10,6 @@ import android.widget.ImageView;
 
 import com.example.myexample.R;
 
-
 public class MultiMedia_08_Activity extends Activity implements View.OnClickListener {
 
     private static final int REQ_CAMERA = 100;

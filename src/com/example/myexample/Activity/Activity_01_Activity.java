@@ -11,7 +11,6 @@ import com.example.myexample.R.layout;
 
 public class Activity_01_Activity extends Activity implements View.OnClickListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +19,6 @@ public class Activity_01_Activity extends Activity implements View.OnClickListen
         Button btnStart = (Button) findViewById(R.id.btnStart);
         btnStart.setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View v) {

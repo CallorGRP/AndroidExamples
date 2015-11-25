@@ -53,4 +53,5 @@ public class AdapterView_ListView_04_Adapter extends ArrayAdapter<AdapterView_Li
         }
         return v;
     }
+
 }

@@ -34,7 +34,6 @@ public class MultiMedia_05_Activity extends Activity implements View.OnClickList
         FrameLayout frame = (FrameLayout) findViewById(R.id.videoLayout);
         frame.addView(surface);
 
-
         Button btnStartRecording = (Button) findViewById(R.id.btnStartRecording);
         Button btnStopRecording = (Button) findViewById(R.id.btnStopRecording);
         Button btnStartPlay = (Button) findViewById(R.id.btnStartPlay);
@@ -76,7 +75,6 @@ public class MultiMedia_05_Activity extends Activity implements View.OnClickList
                 break;
             case R.id.btnStartPlay:
                 mPlayer = new MediaPlayer();
-
 
                 try {
                     mPlayer.setDataSource(path);

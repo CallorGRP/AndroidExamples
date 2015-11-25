@@ -1,13 +1,11 @@
 package com.example.myexample.SNS;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.myexample.R;
-import com.facebook.FacebookSdk;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterException;
@@ -36,7 +34,6 @@ public class SNS_06_Activity extends Activity {
                 Toast.makeText(SNS_06_Activity.this, "twitter login failed!!", Toast.LENGTH_LONG).show();
             }
         });
-
 
     }
 

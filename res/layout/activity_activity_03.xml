@@ -1,25 +1,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">ght="match_parent">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="엑티비티B"
-        android:textSize="40sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="전달 데이터"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20sp" />
-
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">ght="match_parent">
+	<TextView android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="엑티비티B"
+		android:textSize="40sp" />
+	<TextView android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="전달 데이터"
+		android:textSize="20sp" />
+	<TextView android:id="@+id/data"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textSize="20sp" />
 </LinearLayout>

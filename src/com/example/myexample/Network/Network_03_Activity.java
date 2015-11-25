@@ -6,7 +6,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,18 +20,12 @@ import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 public class Network_03_Activity extends Activity implements View.OnClickListener {
     private static final String DEBUG_TAG = "Network_03_Activity";
     private EditText url;
     private Button button;
     private TextView webpage;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

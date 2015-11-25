@@ -22,7 +22,6 @@ public class Thread_Thread_03_Activity extends Activity implements View.OnClickL
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
 
-
     }
 
     @Override

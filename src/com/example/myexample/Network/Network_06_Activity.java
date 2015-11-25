@@ -74,7 +74,6 @@ public class Network_06_Activity extends Activity implements View.OnClickListene
                 int response = conn.getResponseCode();
                 is = conn.getInputStream();
 
-
                 Reader reader = null;
                 reader = new InputStreamReader(is, "UTF-8");
                 reader.read(buffer);

@@ -33,11 +33,9 @@ public class WebView_09_Activity extends Activity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
 
-
         webView.loadUrl("file:///android_asset/webview_dialog.html");
 
     }
-
 
     @Override
     public void onBackPressed() {
@@ -71,7 +69,6 @@ public class WebView_09_Activity extends Activity {
 
             alert.setMessage(message);
 
-
             alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
                     result.confirm();
@@ -88,7 +85,6 @@ public class WebView_09_Activity extends Activity {
             return true;
         }
 
-
         @Override
         public boolean onJsPrompt(WebView view, String url, String message, String defaultValue, final JsPromptResult result) {
             AlertDialog.Builder alert = new AlertDialog.Builder(WebView_09_Activity.this);
@@ -103,7 +99,6 @@ public class WebView_09_Activity extends Activity {
                     result.confirm();
                 }
             });
-
 
             alert.setNegativeButton("Cancel",
                     new DialogInterface.OnClickListener() {

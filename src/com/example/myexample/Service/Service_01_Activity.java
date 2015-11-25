@@ -28,7 +28,6 @@ public class Service_01_Activity extends Activity implements View.OnClickListene
         music = MediaPlayer.create(this, R.raw.konan);
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

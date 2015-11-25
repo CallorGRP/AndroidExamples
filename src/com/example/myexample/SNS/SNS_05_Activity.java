@@ -1,6 +1,5 @@
 package com.example.myexample.SNS;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -73,7 +72,6 @@ public class SNS_05_Activity extends Activity implements View.OnClickListener {
             }
         });
 
-
     }
 
     @Override
@@ -111,7 +109,6 @@ public class SNS_05_Activity extends Activity implements View.OnClickListener {
                     }
                 });
 
-
                 break;
             case R.id.btn_share2:
                 AssetManager assetmanager = getResources().getAssets();
@@ -138,7 +135,6 @@ public class SNS_05_Activity extends Activity implements View.OnClickListener {
                 break;
         }
     }
-
 
     @Override
     protected void onResume() {

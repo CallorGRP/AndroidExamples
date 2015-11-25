@@ -11,8 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.example.myexample.R;
-import com.example.myexample.R.array;
-import com.example.myexample.R.layout;
 
 public class Layout_Main extends ListActivity
         implements

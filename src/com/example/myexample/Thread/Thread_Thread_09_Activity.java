@@ -23,7 +23,6 @@ public class Thread_Thread_09_Activity extends Activity implements View.OnClickL
         Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(this);
 
-
     }
 
     @Override

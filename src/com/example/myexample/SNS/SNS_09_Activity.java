@@ -1,6 +1,5 @@
 package com.example.myexample.SNS;
 
-
 import android.app.ListActivity;
 import android.os.Bundle;
 
@@ -38,7 +37,6 @@ public class SNS_09_Activity extends ListActivity {
             }
         });
     }
-
 
 }
 

@@ -32,7 +32,6 @@ public class WebView_08_Activity extends Activity {
 
     }
 
-
     @Override
     public void onBackPressed() {
         if (webView.canGoBack())

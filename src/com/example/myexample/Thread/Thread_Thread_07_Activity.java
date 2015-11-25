@@ -45,6 +45,5 @@ public class Thread_Thread_07_Activity extends Activity implements View.OnClickL
                 break;
         }
 
-
     }
 }

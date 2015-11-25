@@ -27,7 +27,6 @@ public class Network_02_Activity extends Activity implements View.OnClickListene
     private Button button;
     private TextView webpage;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,13 +76,11 @@ public class Network_02_Activity extends Activity implements View.OnClickListene
                     Log.d(DEBUG_TAG, "The response is: " + response);
                     is = conn.getInputStream();
 
-
                     Reader reader = null;
                     reader = new InputStreamReader(is, "UTF-8");
                     char[] buffer = new char[len];
                     reader.read(buffer);
                     return new String(buffer);
-
 
                 } finally {
                     if (is != null) {

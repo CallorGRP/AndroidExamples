@@ -2,7 +2,6 @@ package com.example.myexample.MultiMedia;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
-import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.SurfaceHolder;
@@ -12,8 +11,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.example.myexample.R;
-
-import java.io.IOException;
 
 public class MultiMedia_06_Activity extends Activity implements View.OnClickListener {
     SurfaceHolder holder;
@@ -46,7 +43,6 @@ public class MultiMedia_06_Activity extends Activity implements View.OnClickList
         switch (v.getId()) {
             case R.id.btnStartPlay:
                 mPlayer = new MediaPlayer();
-
 
                 try {
                     mPlayer.setDataSource(path);

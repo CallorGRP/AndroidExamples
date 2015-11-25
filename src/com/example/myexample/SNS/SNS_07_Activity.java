@@ -1,8 +1,6 @@
 package com.example.myexample.SNS;
 
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -42,9 +40,7 @@ public class SNS_07_Activity extends Activity {
             }
         });
 
-
     }
-
 
 }
 

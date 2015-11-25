@@ -15,7 +15,6 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-
 public class Location_09_Activity extends FragmentActivity implements GoogleMap.OnMapClickListener {
     MyListener gpsListener = new MyListener();
     GoogleMap map;

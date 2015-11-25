@@ -34,7 +34,6 @@ public class WebView_05_Activity extends Activity implements View.OnClickListene
 
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

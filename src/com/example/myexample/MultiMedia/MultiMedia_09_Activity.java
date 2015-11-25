@@ -13,7 +13,6 @@ import com.example.myexample.R;
 
 import java.io.IOException;
 
-
 public class MultiMedia_09_Activity extends Activity implements View.OnClickListener {
 
     private static final int REQ_ALBUM = 100;

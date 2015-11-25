@@ -1,7 +1,6 @@
 package com.example.myexample.Thread;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;

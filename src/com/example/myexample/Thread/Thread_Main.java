@@ -10,18 +10,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 
 import com.example.myexample.R;
-import com.example.myexample.Widgets.Widget_Button_01_Activity;
-import com.example.myexample.Widgets.Widget_Button_02_Activity;
-import com.example.myexample.Widgets.Widget_Button_03_Activity;
-import com.example.myexample.Widgets.Widget_CompoundButton_01_Activity;
-import com.example.myexample.Widgets.Widget_CompoundButton_02_Activity;
-import com.example.myexample.Widgets.Widget_EditText_01_Activity;
-import com.example.myexample.Widgets.Widget_EditText_02_Activity;
-import com.example.myexample.Widgets.Widget_ImageView_01_Activity;
-import com.example.myexample.Widgets.Widget_ImageView_02_Activity;
-import com.example.myexample.Widgets.Widget_ImageView_03_Activity;
-import com.example.myexample.Widgets.Widget_TextView_01_Activity;
-import com.example.myexample.Widgets.Widget_TextView_02_Activity;
 
 public class Thread_Main extends ListActivity implements OnItemClickListener {
 

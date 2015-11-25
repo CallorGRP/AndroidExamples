@@ -18,7 +18,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-
 public class Location_08_Activity extends FragmentActivity {
     MyListener gpsListener = new MyListener();
     GoogleMap map;
@@ -60,7 +59,6 @@ public class Location_08_Activity extends FragmentActivity {
                 polylineOptions.add(curPoint).add(gas_station);
 
                 map.addPolyline(polylineOptions);
-
 
             }
         }
