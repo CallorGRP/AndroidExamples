@@ -11,9 +11,7 @@ import android.widget.ArrayAdapter;
 
 import com.example.myexample.R;
 
-public class Activity_Main extends ListActivity
-        implements
-        OnItemClickListener {
+public class Activity_Main extends ListActivity implements OnItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
