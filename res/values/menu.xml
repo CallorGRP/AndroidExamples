@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="main_menu">
+		<item>뷰</item>
+		<item>레이아웃</item>
+		<item>기본위젯</item>
+		<item>어댑터뷰</item>
+		<item>대화상자</item>
+		<item>쓰레드</item>
+		<item>애니메이션</item>
+		<item>네트워크</item>
+		<item>웹뷰</item>
+		<item>액티비티</item>
+		<item>서비스</item>
+		<item>브로드케스트리시버</item>
+		<item>프레그먼트</item>
+		<item>멀티미디어</item>
+		<item>위치 기반 서비스</item>
+		<item>소셜네트워크서비스</item>
+		<item>구글Push서비스</item>
+	</string-array>
+	<string-array name="view_menu">
+		<item>뷰의 영역</item>
+		<item>뷰의 배경01</item>
+		<item>뷰의 배경02</item>
+		<item>뷰의 간격</item>
+		<item>뷰의 Visibility 01</item>
+		<item>뷰의 Visibility 02</item>
+	</string-array>
+	<string-array name="layout_menu">
+		<item>리니어레이아웃_방향_01</item>
+		<item>리니어레이아웃_방향_02</item>
+		<item>리니어레이아웃_방향_03</item>
+		<item>리니어레이아웃_공간가중치_01</item>
+		<item>리니어레이아웃_공간가중치_02</item>
+		<item>리니어레이아웃_정렬방식_01</item>
+		<item>리니어레이아웃_정렬방식_02</item>
+		<item>렐러티브레이아웃_01</item>
+		<item>렐러티브레이아웃_02</item>
+		<item>프레임레이아웃_01</item>
+		<item>프레임레이아웃_02</item>
+		<item>테이블레이아웃_01</item>
+		<item>테이블레이아웃_02</item>
+		<item>스크롤뷰_01</item>
+		<item>스크롤뷰_02</item>
+		<item>그리드레이아웃_01</item>
+		<item>그리드레이아웃_02</item>
+	</string-array>
+	<string-array name="widget_menu">
+		<item>텍스트뷰_01</item>
+		<item>텍스트뷰_02</item>
+		<item>버튼_01</item>
+		<item>버튼_02</item>
+		<item>버튼_03</item>
+		<item>컴파운드버튼_01</item>
+		<item>컴파운드버튼_02</item>
+		<item>에디트택스트_01</item>
+		<item>에디트택스트_02</item>
+		<item>이미지뷰_01</item>
+		<item>이미지뷰_02</item>
+		<item>이미지뷰_03</item>
+	</string-array>
+	<string-array name="adapterview_menu">
+		<item>리스트뷰_01</item>
+		<item>리스트뷰_02</item>
+		<item>리스트뷰_03</item>
+		<item>리스트뷰_04</item>
+		<item>리스트뷰_05</item>
+		<item>그리드뷰_01</item>
+		<item>그리드뷰_02</item>
+		<item>그리드뷰_03</item>
+		<item>그리드뷰_04</item>
+		<item>스피너_01</item>
+		<item>스피너_02</item>
+		<item>스피너_03</item>
+	</string-array>
+	<string-array name="thread_menu">
+		<item>쓰레드_01</item>
+		<item>쓰레드_02</item>
+		<item>쓰레드_03</item>
+		<item>쓰레드_04</item>
+		<item>쓰레드_05</item>
+		<item>쓰레드_06</item>
+		<item>쓰레드_07</item>
+		<item>쓰레드_08</item>
+		<item>쓰레드_09</item>
+		<item>쓰레드_10</item>
+		<item>쓰레드_11</item>
+		<item>쓰레드_12</item>
+	</string-array>
+	<string-array name="activity_menu">
+		<item>액티비티01</item>
+		<item>액티비티02</item>
+		<item>액티비티03</item>
+		<item>액티비티04</item>
+		<item>액티비티05</item>
+		<item>액티비티06</item>
+		<item>액티비티07</item>
+		<item>액티비티08</item>
+	</string-array>
+	<string-array name="service_menu">
+		<item>서비스01</item>
+		<item>서비스02</item>
+		<item>서비스03</item>
+	</string-array>
+	<string-array name="receiver_menu">
+		<item>브로드케스트리시버01</item>
+		<item>브로드케스트리시버02</item>
+		<item>브로드케스트리시버03</item>
+	</string-array>
+	<string-array name="provider_menu">
+		<item>콘텐트프로바이더01</item>
+	</string-array>
+	<string-array name="multimedia_menu">
+		<item>멀티미디어01</item>
+		<item>멀티미디어02</item>
+		<item>멀티미디어03</item>
+		<item>멀티미디어04</item>
+		<item>멀티미디어05</item>
+		<item>멀티미디어06</item>
+		<item>멀티미디어07</item>
+		<item>멀티미디어08</item>
+		<item>멀티미디어09</item>
+		<item>멀티미디어10</item>
+	</string-array>
+	<string-array name="network_menu">
+		<item>네트워크01</item>
+		<item>네트워크02</item>
+		<item>네트워크03</item>
+		<item>네트워크04</item>
+		<item>네트워크05</item>
+		<item>네트워크06</item>
+		<item>네트워크07</item>
+		<item>네트워크08</item>
+		<item>네트워크09</item>
+		<item>네트워크10</item>
+		<item>네트워크11</item>
+		<item>네트워크12</item>
+		<item>네트워크13</item>
+		<item>네트워크14</item>
+		<item>네트워크15</item>
+		<item>네트워크16</item>
+		<item>네트워크17</item>
+		<item>네트워크18</item>
+		<item>네트워크19</item>
+		<item>네트워크20</item>
+		<item>네트워크20</item>
+	</string-array>
+	<string-array name="webview_menu">
+		<item>웹뷰01</item>
+		<item>웹뷰02</item>
+		<item>웹뷰03</item>
+		<item>웹뷰04</item>
+		<item>웹뷰05</item>
+		<item>웹뷰06</item>
+		<item>웹뷰07</item>
+		<item>웹뷰08</item>
+		<item>웹뷰09</item>
+		<item>웹뷰10</item>
+	</string-array>
+	<string-array name="location_menu">
+		<item>위치정보01</item>
+		<item>위치정보02</item>
+		<item>위치정보03</item>
+		<item>위치정보04</item>
+		<item>위치정보05</item>
+		<item>위치정보06</item>
+		<item>위치정보07</item>
+		<item>위치정보08</item>
+		<item>위치정보09</item>
+		<item>위치정보10</item>
+	</string-array>
+	<string-array name="sns_menu">
+		<item>소셜네트워크서비스01</item>
+		<item>소셜네트워크서비스02</item>
+		<item>소셜네트워크서비스03</item>
+		<item>소셜네트워크서비스04</item>
+		<item>소셜네트워크서비스05</item>
+		<item>소셜네트워크서비스06</item>
+		<item>소셜네트워크서비스07</item>
+		<item>소셜네트워크서비스08</item>
+		<item>소셜네트워크서비스09</item>
+		<item>소셜네트워크서비스10</item>
+		<item>소셜네트워크서비스11</item>
+		<item>소셜네트워크서비스12</item>
+		<item>소셜네트워크서비스13</item>
+	</string-array>
+</resources>
