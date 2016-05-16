@@ -3,19 +3,20 @@
               android:layout_height="match_parent"
               android:background="#ffffff"
               android:orientation="vertical">
-	<TextView
-		android:id="@+id/textView4"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="보일러 전원"
-		android:textAppearance="?android:attr/textAppearanceLarge"/>
 	<ToggleButton android:id="@+id/toggleButton1"
 	              android:layout_width="wrap_content"
 	              android:layout_height="wrap_content"
 	              android:text="ToggleButton"/>
-	<TextView
-		android:id="@+id/tvStatus"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceLarge"/>
+	<CheckBox android:id="@+id/checkBox1"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="CheckBox"/>
+	<RadioButton android:id="@+id/radioButton1"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="RadioButton"/>
+	<Switch android:id="@+id/switch1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Switch"/>
 </LinearLayout>

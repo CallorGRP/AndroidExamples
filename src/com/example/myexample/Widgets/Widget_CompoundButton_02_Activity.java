@@ -3,15 +3,15 @@ package com.example.myexample.Widgets;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.example.myexample.R;
 
 public class Widget_CompoundButton_02_Activity extends Activity implements CompoundButton.OnCheckedChangeListener {
 
-    Switch switch1;
+    ToggleButton toggleButton1;
     TextView tvStatus;
 
     @Override
@@ -19,10 +19,10 @@ public class Widget_CompoundButton_02_Activity extends Activity implements Compo
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_widgets_compoundbutton_02);
 
-        switch1 = (Switch)findViewById(R.id.switch1);
+        toggleButton1 = (ToggleButton)findViewById(R.id.toggleButton1);
         tvStatus = (TextView) findViewById(R.id.tvStatus);
 
-        switch1.setOnCheckedChangeListener(this);
+        toggleButton1.setOnCheckedChangeListener(this);
     }
 
     @Override

@@ -51,10 +51,11 @@
         <activity android:name=".Widgets.Widget_TextView_01_Activity" />
         <activity android:name=".Widgets.Widget_TextView_02_Activity" />
         <activity android:name=".Widgets.Widget_CompoundButton_01_Activity" />
+        <activity android:name=".Widgets.Widget_CompoundButton_02_Activity" />
         <activity android:name=".Widgets.Widget_CompoundButton_03_Activity" />
         <activity android:name=".Widgets.Widget_CompoundButton_04_Activity" />
         <activity android:name=".Widgets.Widget_CompoundButton_05_Activity" />
-        <activity android:name=".Widgets.Widget_CompoundButton_02_Activity" />
+        <activity android:name=".Widgets.Widget_CompoundButton_06_Activity" />
         <activity android:name=".Widgets.Widget_Button_01_Activity" />
         <activity android:name=".Widgets.Widget_Button_02_Activity" />
         <activity android:name=".Widgets.Widget_Button_03_Activity" />
