@@ -21,7 +21,7 @@ public class Widget_Button_01_Activity extends Activity {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(Widget_Button_01_Activity.this, "Ȯ�� Ŭ��",
+                Toast.makeText(Widget_Button_01_Activity.this, "확인 클릭",
                         Toast.LENGTH_SHORT).show();
             }
         });

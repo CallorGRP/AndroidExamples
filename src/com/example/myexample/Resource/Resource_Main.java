@@ -1,4 +1,4 @@
-package com.example.myexample.Widgets;
+package com.example.myexample.Resource;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import com.example.myexample.R;
 import com.example.myexample.Thread.Thread_Thread_01_Activity;
 
-public class Widget_Main extends ListActivity
+public class Resource_Main extends ListActivity
         implements
         OnItemClickListener {
 
@@ -22,7 +22,7 @@ public class Widget_Main extends ListActivity
         setContentView(R.layout.activity_main);
 
         Resources res = getResources();
-        String[] args = res.getStringArray(R.array.widget_menu);
+        String[] args = res.getStringArray(R.array.thread_menu);
 
         setListAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, args));
@@ -33,13 +33,14 @@ public class Widget_Main extends ListActivity
     @Override
     public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
         Resources res = getResources();
-        String[] args = res.getStringArray(R.array.widget_menu);
+        String[] args = res.getStringArray(R.array.thread_menu);
         Intent i = null;
         switch (arg2) {
             case 0:
-                i = new Intent(this, Widget_TextView_01_Activity.class);
+                i = new Intent(this, Thread_Thread_01_Activity.class);
                 break;
-            case 1 :
+                /*
+			case 1 :
 				i = new Intent(this, Widget_TextView_02_Activity.class);
 				break;
 			case 2 :
@@ -58,25 +59,25 @@ public class Widget_Main extends ListActivity
 				i = new Intent(this, Widget_CompoundButton_02_Activity.class);
 				break;
 			case 7 :
-				i = new Intent(this, Widget_CompoundButton_03_Activity.class);
-				break;
-			case 8 :
-				i = new Intent(this, Widget_CompoundButton_04_Activity.class);
-				break;
-			case 9 :
 				i = new Intent(this, Widget_EditText_01_Activity.class);
 				break;
-			case 10 :
+			case 8 :
 				i = new Intent(this, Widget_EditText_02_Activity.class);
 				break;
-			case 11 :
+			case 9 :
 				i = new Intent(this, Widget_ImageView_01_Activity.class);
 				break;
-			case 12 :
+			case 10 :
 				i = new Intent(this, Widget_ImageView_02_Activity.class);
 				break;
-			case 13 :
+			case 11 :
 				i = new Intent(this, Widget_ImageView_03_Activity.class);
+				break;
+			case 12 :
+				i = new Intent(this, Widget_TextView_01_Activity.class);
+				break;
+			case 13 :
+				i = new Intent(this, Widget_TextView_01_Activity.class);
 				break;
 			case 14 :
 				i = new Intent(this, Widget_TextView_01_Activity.class);
@@ -87,12 +88,7 @@ public class Widget_Main extends ListActivity
 			case 16 :
 				i = new Intent(this, Widget_TextView_01_Activity.class);
 				break;
-			case 17 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-			case 18 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
+*/
         }
         startActivity(i);
         //Toast.makeText(this, args[arg2], Toast.LENGTH_SHORT).show();
