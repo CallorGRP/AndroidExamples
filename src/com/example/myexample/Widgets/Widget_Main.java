@@ -10,7 +10,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 
 import com.example.myexample.R;
-import com.example.myexample.Thread.Thread_Thread_01_Activity;
 
 public class Widget_Main extends ListActivity
         implements
@@ -64,6 +63,10 @@ public class Widget_Main extends ListActivity
 				i = new Intent(this, Widget_CompoundButton_04_Activity.class);
 				break;
 			case 9 :
+				i = new Intent(this, Widget_CompoundButton_05_Activity.class);
+				break;
+			/*
+			case 9 :
 				i = new Intent(this, Widget_EditText_01_Activity.class);
 				break;
 			case 10 :
@@ -93,6 +96,7 @@ public class Widget_Main extends ListActivity
 			case 18 :
 				i = new Intent(this, Widget_TextView_01_Activity.class);
 				break;
+				*/
         }
         startActivity(i);
         //Toast.makeText(this, args[arg2], Toast.LENGTH_SHORT).show();
