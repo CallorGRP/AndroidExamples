@@ -18,7 +18,7 @@ public class Widget_CompoundButton_04_Activity extends Activity implements Compo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_widgets_compoundbutton_05);
+        setContentView(R.layout.activity_widgets_compoundbutton_04);
 
         checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
         checkBox2 = (CheckBox) findViewById(R.id.checkBox2);

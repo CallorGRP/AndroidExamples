@@ -21,7 +21,7 @@ public class Widget_CompoundButton_05_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_widgets_compoundbutton_06);
+        setContentView(R.layout.activity_widgets_compoundbutton_05);
 
     }
 

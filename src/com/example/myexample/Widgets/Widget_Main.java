@@ -68,13 +68,13 @@ public class Widget_Main extends ListActivity
 			case 10 :
 				i = new Intent(this, Widget_CompoundButton_06_Activity.class);
 				break;
-			/*
-			case 9 :
+			case 11 :
 				i = new Intent(this, Widget_EditText_01_Activity.class);
 				break;
-			case 10 :
+			case 12 :
 				i = new Intent(this, Widget_EditText_02_Activity.class);
 				break;
+			/*
 			case 11 :
 				i = new Intent(this, Widget_ImageView_01_Activity.class);
 				break;
