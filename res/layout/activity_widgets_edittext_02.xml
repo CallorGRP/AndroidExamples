@@ -1,16 +1,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 	<EditText android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:hint="이름을 입력하세요." />
+	          android:layout_height="wrap_content"
+	          android:hint="selectAllOnFocus:true"
+	          android:inputType="text"
+	          android:selectAllOnFocus="true"
+	          android:text="안녕하세요."
+		/>
 	<EditText android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:hint="나이를 입력하세요."
-		android:numeric="integer" />
+	          android:layout_height="wrap_content"
+	          android:hint="selectAllOnFocus:false"
+	          android:inputType="text"
+	          android:selectAllOnFocus="false"
+	          android:text="안녕하세요."
+		/>
 	<EditText android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:hint="전화번호를 입력하세요."
-		android:phoneNumber="true" />
+	          android:layout_height="wrap_content"
+	          android:cursorVisible="true"
+	          android:hint="cursorVisible:true"
+	          android:inputType="text"
+	          android:selectAllOnFocus="true"
+	          android:text="안녕하세요."
+		/>
+	<EditText android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:cursorVisible="false"
+	          android:hint="cursorVisible:false"
+	          android:inputType="text"
+	          android:selectAllOnFocus="false"
+	          android:text="안녕하세요."
+		/>
 </LinearLayout>
