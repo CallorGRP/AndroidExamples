@@ -17,7 +17,7 @@ public class Widget_CompoundButton_03_Activity extends Activity implements Compo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_widgets_compoundbutton_04);
+        setContentView(R.layout.activity_widgets_compoundbutton_03);
 
         switch1 = (Switch)findViewById(R.id.switch1);
         tvStatus = (TextView) findViewById(R.id.tvStatus);

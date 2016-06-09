@@ -36,12 +36,13 @@ public class Widget_CompoundButton_04_Activity extends Activity implements Compo
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
         String status = "";
-        if ( checkBox1.isChecked() ) status += checkBox1.getText() + " ";
-        if ( checkBox2.isChecked() ) status += checkBox2.getText() + " ";
-        if ( checkBox3.isChecked() ) status += checkBox3.getText() + " ";
-        if ( checkBox4.isChecked() ) status += checkBox4.getText() + " ";
+        int cnt = 0;
+        if ( checkBox1.isChecked() ) {status += checkBox1.getText() + " ";cnt++;}
+        if ( checkBox2.isChecked() ) {status += checkBox2.getText() + " ";cnt++;}
+        if ( checkBox3.isChecked() ) {status += checkBox3.getText() + " ";cnt++;}
+        if ( checkBox4.isChecked() ) {status += checkBox4.getText() + " ";cnt++;}
 
-        tvStatus.setText("좋아하는 과일 : " + status);
+        tvStatus.setText("좋아하는 과일 : " + cnt + "개, " + status);
 
     }
 }

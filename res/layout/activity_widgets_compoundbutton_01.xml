@@ -7,6 +7,10 @@
 	              android:layout_width="wrap_content"
 	              android:layout_height="wrap_content"
 	              android:text="ToggleButton"/>
+	<Switch android:id="@+id/switch1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Switch"/>
 	<CheckBox android:id="@+id/checkBox1"
 	          android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
@@ -15,8 +19,4 @@
 	             android:layout_width="wrap_content"
 	             android:layout_height="wrap_content"
 	             android:text="RadioButton"/>
-	<Switch android:id="@+id/switch1"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="Switch"/>
 </LinearLayout>

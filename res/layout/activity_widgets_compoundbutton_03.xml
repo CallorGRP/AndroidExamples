@@ -10,12 +10,13 @@
 		android:text="보일러 전원"
 		android:textAppearance="?android:attr/textAppearanceLarge"/>
 	<Switch android:id="@+id/switch1"
-	              android:layout_width="wrap_content"
-	              android:layout_height="wrap_content"
-	              android:text="ToggleButton"/>
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"/>
 	<TextView
 		android:id="@+id/tvStatus"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:text="상태:켜짐"
 		android:textAppearance="?android:attr/textAppearanceLarge"/>
 </LinearLayout>

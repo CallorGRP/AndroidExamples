@@ -74,6 +74,9 @@ public class Widget_Main extends ListActivity
 			case 12 :
 				i = new Intent(this, Widget_EditText_02_Activity.class);
 				break;
+			case 13 :
+				i = new Intent(this, Widget_EditText_03_Activity.class);
+				break;
 			/*
 			case 11 :
 				i = new Intent(this, Widget_ImageView_01_Activity.class);

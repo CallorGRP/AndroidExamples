@@ -61,6 +61,7 @@
         <activity android:name=".Widgets.Widget_Button_03_Activity" />
         <activity android:name=".Widgets.Widget_EditText_01_Activity" />
         <activity android:name=".Widgets.Widget_EditText_02_Activity" />
+        <activity android:name=".Widgets.Widget_EditText_03_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_01_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_02_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_03_Activity" />
