@@ -77,32 +77,15 @@ public class Widget_Main extends ListActivity
 			case 13 :
 				i = new Intent(this, Widget_EditText_03_Activity.class);
 				break;
-			/*
-			case 11 :
+			case 14 :
 				i = new Intent(this, Widget_ImageView_01_Activity.class);
 				break;
-			case 12 :
+			case 15 :
 				i = new Intent(this, Widget_ImageView_02_Activity.class);
 				break;
-			case 13 :
+			case 16 :
 				i = new Intent(this, Widget_ImageView_03_Activity.class);
 				break;
-			case 14 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-			case 15 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-			case 16 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-			case 17 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-			case 18 :
-				i = new Intent(this, Widget_TextView_01_Activity.class);
-				break;
-				*/
         }
         startActivity(i);
         //Toast.makeText(this, args[arg2], Toast.LENGTH_SHORT).show();
