@@ -64,6 +64,8 @@
 		<item>이미지뷰_01</item>
 		<item>이미지뷰_02</item>
 		<item>이미지뷰_03</item>
+		<item>이미지뷰_04</item>
+		<item>이미지뷰_05</item>
 	</string-array>
 	<string-array name="adapterview_menu">
 		<item>리스트뷰_01</item>

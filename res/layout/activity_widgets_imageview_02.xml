@@ -2,51 +2,44 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-	<FrameLayout android:layout_width="match_parent"
-	             android:layout_height="match_parent"
-	             android:visibility="gone">
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="원본"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			/>
-		<ImageView android:layout_width="match_parent"
-		           android:layout_height="wrap_content"
-		           android:adjustViewBounds="true"
-		           android:src="@drawable/imageview_adjust_view_bounds"/>
-	</FrameLayout>
-	<FrameLayout android:layout_width="match_parent"
-	             android:layout_height="match_parent"
-	             android:visibility="gone">
-		>
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="adjustViewBounds=true"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			/>
-		<ImageView android:layout_width="match_parent"
-		           android:layout_height="wrap_content"
-		           android:adjustViewBounds="true"
-		           android:cropToPadding="false"
-		           android:maxHeight="200dp"
-		           android:src="@drawable/imageview_adjust_view_bounds"/>
-	</FrameLayout>
-	<FrameLayout android:layout_width="match_parent"
-	             android:layout_height="match_parent"
-	             android:visibility="visible">
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="adjustViewBounds=false"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			/>
-		<ImageView android:layout_width="match_parent"
-		           android:layout_height="wrap_content"
-		           android:adjustViewBounds="false"
-		           android:src="@drawable/imageview_adjust_view_bounds"
-			/>
-	</FrameLayout>
+	<GridLayout android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:columnCount="4"
+	            android:orientation="horizontal">
+		<Button android:id="@+id/btnCenter"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="center"/>
+		<Button android:id="@+id/btnCenterCrop"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="centerCrop"/>
+		<Button android:id="@+id/btnCenterInside"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="centerInside"/>
+		<Button android:id="@+id/btnFitCenter"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="fitCenter"/>
+		<Button android:id="@+id/btnFitStart"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="fitStart"/>
+		<Button android:id="@+id/btnFitEnd"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="fitEnd"/>
+		<Button android:id="@+id/btnFitXY"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="fitXY"/>
+	</GridLayout>
+	<ImageView android:id="@+id/iv"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:scaleType="center"
+	           android:src="@drawable/imageview_adjust_view_bounds"
+		/>
 </LinearLayout>

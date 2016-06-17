@@ -5,7 +5,7 @@
     android:versionName="1.0">
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="23"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -65,6 +66,8 @@
         <activity android:name=".Widgets.Widget_ImageView_01_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_02_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_03_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_04_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_05_Activity" />
         <!-- 어댑터뷰 -->
         <activity android:name=".AdapterView.AdapterView_Main" />
         <activity android:name=".AdapterView.AdapterView_ListView_01_Activity" />
