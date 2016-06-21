@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myexample.R;
-import com.google.android.gms.vision.text.Text;
 
 public class Widget_ImageView_02_Activity extends Activity implements View.OnClickListener {
 
@@ -21,6 +20,7 @@ public class Widget_ImageView_02_Activity extends Activity implements View.OnCli
 
         setContentView(R.layout.activity_widgets_imageview_02);
 
+        Button btnMatrix = (Button) findViewById(R.id.btnMatrix);
         Button btnCenter = (Button) findViewById(R.id.btnCenter);
         Button btnCenterCrop = (Button) findViewById(R.id.btnCenterCrop);
         Button btnCenterInside = (Button) findViewById(R.id.btnCenterInside);
@@ -32,6 +32,7 @@ public class Widget_ImageView_02_Activity extends Activity implements View.OnCli
         tvText = (TextView) findViewById(R.id.tvText);
         ivImage = (ImageView) findViewById(R.id.ivImage);
 
+        btnMatrix.setOnClickListener(this);
         btnCenter.setOnClickListener(this);
         btnCenterCrop.setOnClickListener(this);
         btnCenterInside.setOnClickListener(this);
@@ -44,6 +45,10 @@ public class Widget_ImageView_02_Activity extends Activity implements View.OnCli
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btnMatrix:
+                tvText.setText("MATRIX");
+                ivImage.setScaleType(ImageView.ScaleType.MATRIX);
+                break;
             case R.id.btnCenter:
                 tvText.setText("CENTER");
                 ivImage.setScaleType(ImageView.ScaleType.CENTER);

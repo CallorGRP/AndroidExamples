@@ -6,6 +6,10 @@
 	            android:layout_height="wrap_content"
 	            android:columnCount="4"
 	            android:orientation="horizontal">
+		<Button android:id="@+id/btnMatrix"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="Matrix"/>
 		<Button android:id="@+id/btnCenter"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
@@ -40,12 +44,14 @@
 	          android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
 	          android:layout_gravity="center"
-	          android:text="CENTER"
+	          android:text="MATRIX"
 	          android:textSize="20dp"/>
 	<ImageView android:id="@+id/ivImage"
-	           android:layout_width="match_parent"
-	           android:layout_height="match_parent"
+	           android:layout_width="300dp"
+	           android:layout_height="300dp"
 	           android:scaleType="center"
-	           android:src="@drawable/imageview_adjust_view_bounds"
+	           android:layout_gravity="center"
+	           android:background="#00ff00"
+	           android:src="@drawable/imageview1"
 		/>
 </LinearLayout>
