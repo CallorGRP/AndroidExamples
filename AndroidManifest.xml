@@ -69,6 +69,9 @@
         <activity android:name=".Widgets.Widget_ImageView_04_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_05_Activity" />
         <activity android:name=".Widgets.Widget_ImageView_06_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_07_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_08_Activity" />
+        <activity android:name=".Widgets.Widget_ImageView_09_Activity" />
         <!-- 어댑터뷰 -->
         <activity android:name=".AdapterView.AdapterView_Main" />
         <activity android:name=".AdapterView.AdapterView_ListView_01_Activity" />

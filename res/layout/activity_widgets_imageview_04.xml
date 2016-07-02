@@ -1,31 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="adjustViewBounds:false"
-		android:textAppearance="?android:attr/textAppearanceMedium"
-		/>
-	<ImageView android:layout_width="150dp"
-	           android:layout_height="wrap_content"
-	           android:adjustViewBounds="false"
-	           android:background="#00ff00"
-	           android:scaleType="fitCenter"
-	           android:src="@drawable/imageview_adjust_view_bounds"
-		/>
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="adjustViewBounds:true"
-		android:textAppearance="?android:attr/textAppearanceMedium"
-		/>
-	<ImageView android:layout_width="150dp"
-	           android:layout_height="wrap_content"
-	           android:adjustViewBounds="true"
-	           android:background="#00ff00"
-	           android:scaleType="fitCenter"
-	           android:src="@drawable/imageview_adjust_view_bounds"
-		/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="maxHeight,maxWidth:50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:src="@drawable/imageview1"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="maxHeight,maxWidth:100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:src="@drawable/imageview1"></ImageView>
 </LinearLayout>

@@ -65,13 +65,13 @@ public class Resource_Main extends ListActivity
 				i = new Intent(this, Widget_EditText_02_Activity.class);
 				break;
 			case 9 :
-				i = new Intent(this, Widget_ImageView_01_Activity.class);
+				i = new Intent(this, Widget_ImageView_04_Activity.class);
 				break;
 			case 10 :
-				i = new Intent(this, Widget_ImageView_02_Activity.class);
+				i = new Intent(this, Widget_ImageView_05_Activity.class);
 				break;
 			case 11 :
-				i = new Intent(this, Widget_ImageView_03_Activity.class);
+				i = new Intent(this, Widget_ImageView_06_Activity.class);
 				break;
 			case 12 :
 				i = new Intent(this, Widget_TextView_01_Activity.class);
