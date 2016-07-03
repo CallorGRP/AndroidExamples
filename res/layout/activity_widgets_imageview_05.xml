@@ -52,6 +52,6 @@
 	           android:scaleType="center"
 	           android:layout_gravity="center"
 	           android:background="#00ff00"
-	           android:src="@drawable/imageview1"
+	           android:src="@drawable/imageview_small"
 		/>
 </LinearLayout>

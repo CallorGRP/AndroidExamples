@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="maxHeight,maxWidth:100*100dp"
+        android:text="maxWidth, maxHeight:100*150dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
@@ -17,13 +17,13 @@
         android:adjustViewBounds="true"
         android:maxHeight="100dp"
         android:maxWidth="150dp"
-        android:src="@drawable/imageview1"></ImageView>
+        android:src="@drawable/imageview_small"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="maxHeight,maxWidth:200*300dp"
+        android:text="maxWidth, maxHeight:200*300dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
@@ -33,5 +33,5 @@
         android:adjustViewBounds="true"
         android:maxHeight="200dp"
         android:maxWidth="300dp"
-        android:src="@drawable/imageview1"></ImageView>
+        android:src="@drawable/imageview_small"></ImageView>
 </LinearLayout>

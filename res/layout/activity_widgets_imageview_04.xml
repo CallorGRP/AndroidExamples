@@ -17,7 +17,7 @@
         android:adjustViewBounds="false"
         android:maxHeight="100dp"
         android:maxWidth="100dp"
-        android:src="@drawable/imageview1"></ImageView>
+        android:src="@drawable/imageview_small"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,5 +33,5 @@
         android:adjustViewBounds="true"
         android:maxHeight="100dp"
         android:maxWidth="100dp"
-        android:src="@drawable/imageview1"></ImageView>
+        android:src="@drawable/imageview_small"></ImageView>
 </LinearLayout>

@@ -6,5 +6,5 @@
 		android:layout_height="100dp"
 		android:background="#ff0000"
 		android:padding="5dp"
-		android:src="@drawable/imageview_origin"></ImageView>
+		android:src="@drawable/imageview_droid"></ImageView>
 </LinearLayout>
