@@ -7,23 +7,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="maxHeight,maxWidth:50dp"
+        android:text="android:adjustViewBounds=false"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:adjustViewBounds="true"
-        android:maxHeight="50dp"
-        android:maxWidth="50dp"
+        android:adjustViewBounds="false"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
         android:src="@drawable/imageview1"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="maxHeight,maxWidth:100dp"
+        android:text="android:adjustViewBounds=true"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView

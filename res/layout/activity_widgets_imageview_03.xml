@@ -7,23 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="android:adjustViewBounds=false"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:adjustViewBounds="false"
-        android:maxHeight="100dp"
-        android:maxWidth="100dp"
-        android:src="@drawable/imageview1"></ImageView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="android:adjustViewBounds=true"
+        android:text="maxHeight,maxWidth:100*100dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
@@ -32,6 +16,22 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:maxHeight="100dp"
-        android:maxWidth="100dp"
+        android:maxWidth="150dp"
+        android:src="@drawable/imageview1"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="maxHeight,maxWidth:200*300dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="300dp"
         android:src="@drawable/imageview1"></ImageView>
 </LinearLayout>
