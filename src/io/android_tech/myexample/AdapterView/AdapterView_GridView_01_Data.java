@@ -1,0 +1,19 @@
+package io.android_tech.myexample.AdapterView;
+
+public class AdapterView_GridView_01_Data {
+    public int Image_ID;
+    public String Main_Title;
+    public String Sub_Title;
+
+    public AdapterView_GridView_01_Data(int _Image_ID, String _Main_Title,
+                                        String _Sub_Title) {
+
+        this.Image_ID = _Image_ID;
+        this.Main_Title = _Main_Title;
+        this.Sub_Title = _Sub_Title;
+
+    }
+
+    public AdapterView_GridView_01_Data() {
+    }
+}

@@ -40,7 +40,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig{
-        applicationId "com.example.myexample"
+        applicationId "io.android_tech.myexample"
 
         multiDexEnabled true
     }
