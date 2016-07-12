@@ -1,57 +1,79 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
-	<GridLayout android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:columnCount="4"
-	            android:orientation="horizontal">
-		<Button android:id="@+id/btnMatrix"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="Matrix"/>
-		<Button android:id="@+id/btnCenter"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="center"/>
-		<Button android:id="@+id/btnCenterCrop"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="centerCrop"/>
-		<Button android:id="@+id/btnCenterInside"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="centerInside"/>
-		<Button android:id="@+id/btnFitCenter"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="fitCenter"/>
-		<Button android:id="@+id/btnFitStart"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="fitStart"/>
-		<Button android:id="@+id/btnFitEnd"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="fitEnd"/>
-		<Button android:id="@+id/btnFitXY"
-		        android:layout_height="wrap_content"
-		        android:layout_gravity="center"
-		        android:text="fitXY"/>
-	</GridLayout>
-	<TextView android:id="@+id/tvText"
-	          android:layout_width="wrap_content"
-	          android:layout_height="wrap_content"
-	          android:layout_gravity="center"
-	          android:text="MATRIX"
-	          android:textSize="20dp"/>
-	<ImageView android:id="@+id/ivImage"
-	           android:layout_width="300dp"
-	           android:layout_height="300dp"
-	           android:scaleType="center"
-	           android:layout_gravity="center"
-	           android:background="#00ff00"
-	           android:src="@drawable/imageview_small"
-		/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CENTER" />
+
+        <Button
+            android:id="@+id/btnCenterCrop"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CENTER_CROP" />
+
+        <Button
+            android:id="@+id/btnCenterInside"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CENTER_INSIDE" />
+
+        <Button
+            android:id="@+id/btnFitCenter"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FIT_CENTER" />
+
+        <Button
+            android:id="@+id/btnFitStart"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FIT_START" />
+
+        <Button
+            android:id="@+id/btnFitEnd"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FIT_END" />
+
+        <Button
+            android:id="@+id/btnFitXY"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FIT_XY" />
+
+        <Button
+            android:id="@+id/btnMatrix"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MATRIX" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CENTER"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="#00ff00"
+        android:scaleType="center"
+        android:src="@drawable/imageview_small" />
 </LinearLayout>

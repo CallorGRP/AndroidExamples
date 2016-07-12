@@ -92,18 +92,15 @@ public class Widget_Main extends ListActivity
                 i = new Intent(this, Widget_ImageView_05_Activity.class);
                 break;
             case 19:
-                i = new Intent(this, Widget_ImageView_05_Activity.class);
-                break;
-            case 20:
                 i = new Intent(this, Widget_ImageView_06_Activity.class);
                 break;
-            case 21:
+            case 20:
                 i = new Intent(this, Widget_ImageView_07_Activity.class);
                 break;
-            case 22:
+            case 21:
                 i = new Intent(this, Widget_ImageView_08_Activity.class);
                 break;
-            case 23:
+            case 22:
                 i = new Intent(this, Widget_ImageView_09_Activity.class);
                 break;
         }

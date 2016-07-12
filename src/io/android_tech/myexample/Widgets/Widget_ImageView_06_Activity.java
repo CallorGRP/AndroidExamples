@@ -43,10 +43,6 @@ public class Widget_ImageView_06_Activity extends Activity implements View.OnCli
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case io.android_tech.myexample.R.id.btnMatrix:
-                tvText.setText("MATRIX");
-                ivImage.setScaleType(ImageView.ScaleType.MATRIX);
-                break;
             case io.android_tech.myexample.R.id.btnCenter:
                 tvText.setText("CENTER");
                 ivImage.setScaleType(ImageView.ScaleType.CENTER);
@@ -75,6 +71,11 @@ public class Widget_ImageView_06_Activity extends Activity implements View.OnCli
                 tvText.setText("FIT_XY");
                 ivImage.setScaleType(ImageView.ScaleType.FIT_XY);
                 break;
+            case io.android_tech.myexample.R.id.btnMatrix:
+                tvText.setText("MATRIX");
+                ivImage.setScaleType(ImageView.ScaleType.MATRIX);
+                break;
+
         }
     }
 
