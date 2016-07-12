@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:adjustViewBounds="false"
         android:maxHeight="100dp"
-        android:maxWidth="100dp"
+        android:maxWidth="150dp"
         android:src="@drawable/imageview_small"></ImageView>
 
     <TextView
@@ -32,6 +32,6 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:maxHeight="100dp"
-        android:maxWidth="100dp"
+        android:maxWidth="150dp"
         android:src="@drawable/imageview_small"></ImageView>
 </LinearLayout>
