@@ -20,7 +20,7 @@
 				android:id="@+id/custom_list_image"
 				android:layout_width="100dp"
 				android:layout_height="100dp"
-				android:background="@drawable/ic_launcher"
+				android:background="@mipmap/ic_launcher"
 				>
 			</ImageView>
 		</LinearLayout>

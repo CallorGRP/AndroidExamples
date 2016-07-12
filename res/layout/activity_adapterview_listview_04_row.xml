@@ -14,7 +14,7 @@
 			<ImageView android:id="@+id/custom_list_image"
 				android:layout_width="100dp"
 				android:layout_height="100dp"
-				android:background="@drawable/ic_launcher"></ImageView>
+				android:background="@mipmap/ic_launcher"></ImageView>
 		</LinearLayout>
 		<LinearLayout android:id="@+id/LinearLayout1"
 			android:layout_width="match_parent"
