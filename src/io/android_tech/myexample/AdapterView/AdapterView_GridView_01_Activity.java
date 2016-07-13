@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.widget.GridView;
 
-import io.android_tech.myexample.R;
-
 import java.util.ArrayList;
+
+import io.android_tech.myexample.R;
 
 public class AdapterView_GridView_01_Activity extends Activity {
 
