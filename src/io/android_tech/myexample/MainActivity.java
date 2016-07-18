@@ -55,7 +55,7 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
             case 2:
                 i = new Intent(this, Widget_Main.class);
                 break;
-            case 3:
+/*            case 3:
                 i = new Intent(this, AdapterView_Main.class);
                 break;
             case 5:
@@ -85,11 +85,14 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
             case 15:
                 i = new Intent(this, SNS_Main.class);
                 break;
+                */
             default:
+                Toast.makeText(this, "준비중", Toast.LENGTH_SHORT).show();
                 return;
         }
         startActivity(i);
         Toast.makeText(this, args[arg2], Toast.LENGTH_SHORT).show();
+
 
     }
 }

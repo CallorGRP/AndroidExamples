@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
@@ -21,7 +23,16 @@ public class IntroActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        final Fabric fabric = new Fabric.Builder(this)
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
+
+        Fabric.with(this, new Answers());
         Fabric.with(this, new Twitter(authConfig));
+        Fabric.with(this, new Crashlytics());
+
         setContentView(R.layout.intro);
 
         TextView tv = (TextView) findViewById(R.id.textView1);
