@@ -5,16 +5,21 @@
 	<ImageView android:layout_width="wrap_content"
 	           android:layout_height="wrap_content"
 	           android:padding="5dp"
-	           android:src="@drawable/imageview_adjust_view_bounds"
+	           android:src="@drawable/imageview_car"
 	           android:tint="#55ff0000"></ImageView>
 	<ImageView android:layout_width="wrap_content"
 	           android:layout_height="wrap_content"
 	           android:padding="5dp"
-	           android:src="@drawable/imageview_adjust_view_bounds"
+	           android:src="@drawable/imageview_car"
 	           android:tint="#5500ff00"></ImageView>
 	<ImageView android:layout_width="wrap_content"
 	           android:layout_height="wrap_content"
 	           android:padding="5dp"
-	           android:src="@drawable/imageview_adjust_view_bounds"
+	           android:src="@drawable/imageview_car"
 	           android:tint="#550000ff"></ImageView>
+	<ImageView android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:padding="5dp"
+	           android:src="@drawable/imageview_car"
+	           android:tint="#ff0000ff"></ImageView>
 </LinearLayout>

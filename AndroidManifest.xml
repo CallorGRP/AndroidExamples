@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.android_tech.myexample"
-    android:versionCode="4"
-    android:versionName="1.0.3">
+    android:versionCode="6"
+    android:versionName="1.0.5">
 
     <uses-sdk
         android:minSdkVersion="17"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -39,8 +39,12 @@
         <activity android:name="io.android_tech.myexample.Layouts.Layout_LinearLayout_Orientation_02_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_LinearLayout_Weight_01_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_LinearLayout_Weight_02_Activity" />
+        <activity android:name="io.android_tech.myexample.Layouts.Layout_LinearLayout_Gravity_01_Activity" />
+        <activity android:name="io.android_tech.myexample.Layouts.Layout_LinearLayout_Gravity_02_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_RelativeLayout_01_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_RelativeLayout_02_Activity" />
+        <activity android:name="io.android_tech.myexample.Layouts.Layout_FrameLayout_01_Activity" />
+        <activity android:name="io.android_tech.myexample.Layouts.Layout_FrameLayout_02_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_TableLayout_01_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_TableLayout_02_Activity" />
         <activity android:name="io.android_tech.myexample.Layouts.Layout_ScrollView_01_Activity" />
