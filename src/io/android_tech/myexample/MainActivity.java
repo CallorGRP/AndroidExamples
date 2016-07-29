@@ -55,9 +55,10 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
             case 2:
                 i = new Intent(this, Widget_Main.class);
                 break;
-/*            case 3:
+            case 3:
                 i = new Intent(this, AdapterView_Main.class);
                 break;
+            /*
             case 5:
                 i = new Intent(this, Thread_Main.class);
                 break;
