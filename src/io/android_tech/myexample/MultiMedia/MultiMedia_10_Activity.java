@@ -21,6 +21,7 @@ public class MultiMedia_10_Activity extends Activity {
     private Camera camera;
     private ImageView imageview;
     private boolean inProgress;
+
     private Camera.PictureCallback takePicture = new Camera.PictureCallback() {
 
         @Override
