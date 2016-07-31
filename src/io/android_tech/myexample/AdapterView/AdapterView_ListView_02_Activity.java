@@ -49,7 +49,7 @@ public class AdapterView_ListView_02_Activity extends ListActivity implements
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startQuery();
             } else {
-                Toast.makeText(this, "Until you grant the permission, we canot display the names", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "연락처에 대한 권한이 없어 실행할수 없습니다.", Toast.LENGTH_SHORT).show();
             }
         }
     }
