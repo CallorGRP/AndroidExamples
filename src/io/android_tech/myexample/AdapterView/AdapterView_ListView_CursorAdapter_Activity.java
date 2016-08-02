@@ -33,9 +33,9 @@ public class AdapterView_ListView_CursorAdapter_Activity extends ListActivity im
 
     private void startQuery() {
         mAdapter = new SimpleCursorAdapter(this,
-                android.R.layout.simple_list_item_2, null,
-                CONTACT_PROJECTION,
-                new int[]{android.R.id.text1, android.R.id.text2}, 0);
+                android.R.layout.simple_list_item_1, null,
+                new String[]{Contacts.DISPLAY_NAME},
+                new int[]{android.R.id.text1}, 0);
         setListAdapter(mAdapter);
 
         LoaderManager.LoaderCallbacks<Cursor> loaderCallbacks = this;
@@ -50,14 +50,14 @@ public class AdapterView_ListView_CursorAdapter_Activity extends ListActivity im
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startQuery();
             } else {
-                Toast.makeText(this, "Until you grant the permission, we canot display the names", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "연락처에 대한 권한이 없어 실행할수 없습니다.", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        return new CursorLoader(this, ContactsContract.Data.CONTENT_URI,
+        return new CursorLoader(this, ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
                 CONTACT_PROJECTION, null, null, null);
     }
 

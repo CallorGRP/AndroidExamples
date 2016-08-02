@@ -14,11 +14,12 @@ import android.provider.ContactsContract.Contacts;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-public class AdapterView_ListView_02_Activity extends ListActivity implements
+public class AdapterView_ListView_CursorAdapter_02_Activity extends ListActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
+    private static final int viewList[] = {android.R.id.text1, android.R.id.text2};
 
-    private static final String[] CONTACT_PROJECTION = new String[]{Contacts._ID, Contacts.DISPLAY_NAME};
+    private static final String[] CONTACT_PROJECTION = new String[]{Contacts._ID, Contacts.DISPLAY_NAME, ContactsContract.CommonDataKinds.Phone.NUMBER};
     SimpleCursorAdapter mAdapter;
 
     @Override
@@ -33,8 +34,9 @@ public class AdapterView_ListView_02_Activity extends ListActivity implements
 
     private void startQuery() {
         mAdapter = new SimpleCursorAdapter(this,
-                android.R.layout.simple_list_item_1, null, new String[]{Contacts.DISPLAY_NAME},
-                new int[]{android.R.id.text1}, 0);
+                android.R.layout.simple_list_item_2, null,
+                new String[]{Contacts.DISPLAY_NAME, ContactsContract.CommonDataKinds.Phone.NUMBER},
+                viewList, 0);
         setListAdapter(mAdapter);
 
         LoaderManager.LoaderCallbacks<Cursor> loaderCallbacks = this;
@@ -56,8 +58,8 @@ public class AdapterView_ListView_02_Activity extends ListActivity implements
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        return new CursorLoader(this, ContactsContract.Data.CONTENT_URI,
-                new String[]{Contacts._ID, Contacts.DISPLAY_NAME}, null, null, null);
+        return new CursorLoader(this, ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                CONTACT_PROJECTION, null, null, null);
     }
 
     @Override
