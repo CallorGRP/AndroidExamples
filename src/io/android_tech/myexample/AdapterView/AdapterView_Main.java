@@ -39,7 +39,7 @@ public class AdapterView_Main extends ListActivity
                 i = new Intent(this, AdapterView_ListView_ArrayAdapter_Activity.class);
                 break;
             case 1:
-                i = new Intent(this, AdapterView_ListView_CursorAdapter_Activity.class);
+                i = new Intent(this, AdapterView_ListView_CursorAdapter_01_Activity.class);
                 break;
             case 2:
                 i = new Intent(this, AdapterView_ListView_CursorAdapter_02_Activity.class);

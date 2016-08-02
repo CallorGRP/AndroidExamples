@@ -79,7 +79,7 @@
         <!-- 어댑터뷰 -->
         <activity android:name=".AdapterView.AdapterView_Main" />
         <activity android:name=".AdapterView.AdapterView_ListView_ArrayAdapter_Activity" />
-        <activity android:name=".AdapterView.AdapterView_ListView_CursorAdapter_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_CursorAdapter_01_Activity" />
         <activity android:name=".AdapterView.AdapterView_ListView_CursorAdapter_02_Activity" />
         <activity android:name=".AdapterView.AdapterView_ListView_04_Activity" />
         <activity android:name=".AdapterView.AdapterView_ListView_05_Activity" />

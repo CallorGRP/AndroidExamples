@@ -14,7 +14,7 @@ import android.provider.ContactsContract.Contacts;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-public class AdapterView_ListView_CursorAdapter_Activity extends ListActivity implements
+public class AdapterView_ListView_CursorAdapter_01_Activity extends ListActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
 
