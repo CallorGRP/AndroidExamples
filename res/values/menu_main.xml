@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="main_menu">
+		<item>뷰</item>
+		<item>레이아웃</item>
+		<item>기본위젯</item>
+		<item>어댑터뷰</item>
+		<item>(준비중)대화상자</item>
+		<item>(준비중)쓰레드</item>
+		<item>(준비중)애니메이션</item>
+		<item>(준비중)네트워크</item>
+		<item>(준비중)웹뷰</item>
+		<item>(준비중)액티비티</item>
+		<item>(준비중)서비스</item>
+		<item>(준비중)브로드케스트리시버</item>
+		<item>(준비중)프레그먼트</item>
+		<item>(준비중)멀티미디어</item>
+		<item>(준비중)위치 기반 서비스</item>
+		<item>(준비중)소셜네트워크서비스</item>
+		<item>(준비중)구글Push서비스</item>
+	</string-array>
+</resources>
