@@ -4,7 +4,7 @@ import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
-public class AdapterView_ListView_01_Activity extends ListActivity {
+public class AdapterView_ListView_ArrayAdapter_Activity extends ListActivity {
     private final String[] sFruits = {"사과", "바나나", "토마토", "오렌지", "키위",};
 
     @Override

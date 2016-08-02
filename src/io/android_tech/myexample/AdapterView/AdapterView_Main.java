@@ -36,7 +36,7 @@ public class AdapterView_Main extends ListActivity
         Intent i = null;
         switch (arg2) {
             case 0:
-                i = new Intent(this, AdapterView_ListView_01_Activity.class);
+                i = new Intent(this, AdapterView_ListView_ArrayAdapter_Activity.class);
                 break;
             case 1:
                 i = new Intent(this, AdapterView_ListView_02_Activity.class);

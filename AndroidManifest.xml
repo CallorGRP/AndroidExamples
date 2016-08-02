@@ -78,7 +78,7 @@
         <activity android:name="io.android_tech.myexample.Widgets.Widget_ImageView_09_Activity" />
         <!-- 어댑터뷰 -->
         <activity android:name="io.android_tech.myexample.AdapterView.AdapterView_Main" />
-        <activity android:name="io.android_tech.myexample.AdapterView.AdapterView_ListView_01_Activity" />
+        <activity android:name=".AdapterView.AdapterView_ListView_ArrayAdapter_Activity" />
         <activity android:name="io.android_tech.myexample.AdapterView.AdapterView_ListView_02_Activity" />
         <activity android:name="io.android_tech.myexample.AdapterView.AdapterView_ListView_03_Activity" />
         <activity android:name="io.android_tech.myexample.AdapterView.AdapterView_ListView_04_Activity" />
