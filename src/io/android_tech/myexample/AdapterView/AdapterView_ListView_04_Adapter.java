@@ -1,55 +1,66 @@
 package io.android_tech.myexample.AdapterView;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 
-public class AdapterView_ListView_04_Adapter extends ArrayAdapter<AdapterView_ListView_04_Data> {
-    private ArrayList<AdapterView_ListView_04_Data> items;
-    private Context context;
+public class AdapterView_ListView_04_Adapter extends SimpleCursorAdapter {
+    Context mContext;
+    int mLayout;
+    Cursor mCursor;
+    String[] mFrom;
+    int[] mTo;
 
-    public AdapterView_ListView_04_Adapter(Context context, int textViewResourceId, ArrayList<AdapterView_ListView_04_Data> items) {
-        super(context, textViewResourceId, items);
-        this.context = context;
-        this.items = items;
+    public AdapterView_ListView_04_Adapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
+        super(context, layout, c, from, to, flags);
+        mContext = context;
+        mLayout = layout;
+        mCursor = c;
+        mFrom = from;
+        mTo = to;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View v = convertView;
-        if (v == null) {
+    public View newView(Context context, Cursor cursor, ViewGroup parent) {
+        LayoutInflater vi = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = vi.inflate(mLayout, null);
 
-            LayoutInflater vi = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            v = vi.inflate(io.android_tech.myexample.R.layout.activity_adapterview_listview_04_row, null);
-        }
-        AdapterView_ListView_04_Data custom_list_data = items.get(position);
-
-        if (custom_list_data != null) {
-
-            ImageView iv = (ImageView) v.findViewById(io.android_tech.myexample.R.id.custom_list_image);
-            TextView tv_Main = (TextView) v.findViewById(io.android_tech.myexample.R.id.custom_list_title_main);
-            TextView tv_Sub = (TextView) v.findViewById(io.android_tech.myexample.R.id.custom_list_title_sub);
-
-            Uri uri = Uri.withAppendedPath(Contacts.CONTENT_URI, Long.toString(custom_list_data.Image_ID));
-            InputStream is = Contacts.openContactPhotoInputStream(context.getContentResolver(), uri);
-            Bitmap photo = BitmapFactory.decodeStream(is);
-            iv.setImageBitmap(photo);
-
-            tv_Main.setText(custom_list_data.Main_Title);
-            tv_Sub.setText(custom_list_data.Sub_Title);
-        }
-        return v;
+        return view;
     }
 
+    @Override
+    public void bindView(View view, Context context, Cursor c) {
+
+        TextView tvName = (TextView) view.findViewById(mTo[0]);
+        TextView tvNumber = (TextView) view.findViewById(mTo[1]);
+        ImageView ivImage = (ImageView) view.findViewById(mTo[2]);
+
+        String name = null;
+        String number = null;
+
+        if (c != null) {
+            name = c.getString(c.getColumnIndex(mFrom[0]));
+            number = c.getString(c.getColumnIndex(mFrom[1]));
+            long id = c.getLong(c.getColumnIndex(mFrom[2]));
+
+            tvName.setText(name);
+            tvNumber.setText(number);
+
+            Uri uri = Uri.withAppendedPath(ContactsContract.Contacts.CONTENT_URI, Long.toString(id));
+            InputStream is = ContactsContract.Contacts.openContactPhotoInputStream(context.getContentResolver(), uri);
+            Bitmap photo = BitmapFactory.decodeStream(is);
+            ivImage.setImageBitmap(photo);
+        }
+    }
 }

@@ -15,13 +15,13 @@ public class AdapterView_ListView_04_Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(io.android_tech.myexample.R.layout.activity_adapterview_listview_04);
-
+/*
         AdapterView_ListView_04_Adapter adapter = new AdapterView_ListView_04_Adapter(
                 this, io.android_tech.myexample.R.layout.activity_adapterview_listview_04_row,
                 getContactList());
-
+*/
         ListView list = (ListView) findViewById(io.android_tech.myexample.R.id.listView1);
-        list.setAdapter(adapter);
+  //      list.setAdapter(adapter);
     }
 
     private ArrayList<AdapterView_ListView_04_Data> getContactList() {

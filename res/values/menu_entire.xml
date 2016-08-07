@@ -54,8 +54,8 @@
 	</string-array>
 	<string-array name="adapterview_menu">
 		<item>리스트뷰_ArrayAdapter</item>
-		<item>리스트뷰_CursorAdapter</item>
-		<item>리스트뷰_03</item>
+		<item>리스트뷰_CursorAdapter_01</item>
+		<item>리스트뷰_CursorAdapter_02</item>
 		<item>리스트뷰_04</item>
 		<item>리스트뷰_05</item>
 		<item>그리드뷰_01</item>
