@@ -15,14 +15,14 @@ import android.widget.TextView;
 
 import java.io.InputStream;
 
-public class AdapterView_ListView_04_Adapter extends SimpleCursorAdapter {
+public class AdapterView_ListView_CursorAdapter_02_Adapter extends SimpleCursorAdapter {
     Context mContext;
     int mLayout;
     Cursor mCursor;
     String[] mFrom;
     int[] mTo;
 
-    public AdapterView_ListView_04_Adapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
+    public AdapterView_ListView_CursorAdapter_02_Adapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
         super(context, layout, c, from, to, flags);
         mContext = context;
         mLayout = layout;

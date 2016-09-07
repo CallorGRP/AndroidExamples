@@ -11,7 +11,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import io.android_tech.myexample.R;
@@ -22,7 +21,7 @@ public class AdapterView_ListView_CursorAdapter_02_Activity extends ListActivity
     private static final int viewList[] = {R.id.custom_list_title_main, R.id.custom_list_title_sub,R.id.custom_list_image};
 
     private static final String[] CONTACT_PROJECTION = new String[]{Contacts._ID, Contacts.DISPLAY_NAME, ContactsContract.CommonDataKinds.Phone.NUMBER, ContactsContract.CommonDataKinds.Phone.CONTACT_ID};
-    AdapterView_ListView_04_Adapter mAdapter;
+    AdapterView_ListView_CursorAdapter_02_Adapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +34,8 @@ public class AdapterView_ListView_CursorAdapter_02_Activity extends ListActivity
     }
 
     private void startQuery() {
-        mAdapter = new AdapterView_ListView_04_Adapter(this,
-                R.layout.activity_adapterview_listview_04_row, null,
+        mAdapter = new AdapterView_ListView_CursorAdapter_02_Adapter(this,
+                R.layout.activity_adapterview_listview_cursoradapter_02_row, null,
                 new String[]{Contacts.DISPLAY_NAME, ContactsContract.CommonDataKinds.Phone.NUMBER,ContactsContract.CommonDataKinds.Phone.CONTACT_ID},
                 viewList, 0);
         setListAdapter(mAdapter);

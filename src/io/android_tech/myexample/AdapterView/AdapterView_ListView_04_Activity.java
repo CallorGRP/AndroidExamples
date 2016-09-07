@@ -16,7 +16,7 @@ public class AdapterView_ListView_04_Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(io.android_tech.myexample.R.layout.activity_adapterview_listview_04);
 /*
-        AdapterView_ListView_04_Adapter adapter = new AdapterView_ListView_04_Adapter(
+        AdapterView_ListView_CursorAdapter_02_Adapter adapter = new AdapterView_ListView_CursorAdapter_02_Adapter(
                 this, io.android_tech.myexample.R.layout.activity_adapterview_listview_04_row,
                 getContactList());
 */
