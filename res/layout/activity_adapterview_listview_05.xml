@@ -2,9 +2,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
-	<ImageView android:layout_width="100dp"
-		android:layout_height="100dp"
-		android:background="#ff0000"
-		android:padding="5dp"
-		android:src="@drawable/imageview_droid"></ImageView>
+	<ExpandableListView android:id="@+id/listView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"></ExpandableListView>
 </LinearLayout>
