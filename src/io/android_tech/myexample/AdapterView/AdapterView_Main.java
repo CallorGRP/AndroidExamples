@@ -51,17 +51,20 @@ public class AdapterView_Main extends ListActivity
                 i = new Intent(this, AdapterView_ExpandableListView_01_Activity.class);
                 break;
             case 5:
-                i = new Intent(this, AdapterView_GridView_01_Activity.class);
+                i = new Intent(this, AdapterView_ExpandableListView_02_Activity.class);
                 break;
             case 6:
-                i = new Intent(this, AdapterView_GridView_02_Activity.class);
+                i = new Intent(this, AdapterView_GridView_01_Activity.class);
                 break;
             case 7:
-                i = new Intent(this, AdapterView_GridView_03_Activity.class);
+                i = new Intent(this, AdapterView_GridView_02_Activity.class);
                 break;
             case 8:
-                i = new Intent(this, AdapterView_GridView_04_Activity.class);
+                i = new Intent(this, AdapterView_GridView_03_Activity.class);
+                break;
             case 9:
+                i = new Intent(this, AdapterView_GridView_04_Activity.class);
+            case 10:
                 i = new Intent(this, AdapterView_Spinner_01_Activity.class);
                 break;
 

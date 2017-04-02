@@ -9,73 +9,47 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import io.android_tech.myexample.R;
 
 public class AdapterView_ExpandableListView_01_Activity extends Activity {
-    private ArrayList<String> mGroupList = null;
-    private ArrayList<ArrayList<String>> mChildList = null;
-    private ArrayList<String> mChildListContent = null;
     private ExpandableListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(io.android_tech.myexample.R.layout.activity_adapterview_listview_05);
+        setContentView(io.android_tech.myexample.R.layout.activity_adapterview_expandablelistview_01);
 
-        HashMap<String, String> group1 = new HashMap<String, String>();
-        HashMap<String, String> group2 = new HashMap<String, String>();
-        HashMap<String, String> group3 = new HashMap<String, String>();
-        HashMap<String, String> group4 = new HashMap<String, String>();
-        HashMap<String, String> child1 = new HashMap<String, String>();
-        HashMap<String, String> child2 = new HashMap<String, String>();
-        HashMap<String, String> child3 = new HashMap<String, String>();
-        HashMap<String, String> child4 = new HashMap<String, String>();
+        String arrGroup[] = {"과일", "야채", "가공식품"};
+        String arrChild1[] = {"사과", "감", "단감", "곶감", "귤", "오랜지", "배", "복숭아", "살구", "자두"};
+        String arrChild2[] = {"감자", "고구마", "깻잎", "당근", "도라지", "대파", "마늘", "무", "미나리", "버섯"};
+        String arrChild3[] = {"통조림", "병조림 식품,", "건조 식품", "절임 식품", "훈제ㆍ연제 식품", "냉동 식품", "발효 식품", "레토르트 식품", "인스턴트 식품"};
+        String arrChild[][] = {arrChild1, arrChild2, arrChild3};
 
-        ArrayList<Map<String, String>> groupList = new ArrayList<Map<String, String>>();
-        group1.put("Title", "오늘의 업데이트");
-        group2.put("Title", "시스템 정기점검 공지");
-        group3.put("Title", "회원탈퇴 방법");
-        group4.put("Title", "개인정보 동의");
+        ArrayList<HashMap<String, String>> groupList = new ArrayList<>();
+        ArrayList<ArrayList<HashMap<String, String>>> childLists = new ArrayList<>();
 
-        groupList.add(group1);
-        groupList.add(group2);
-        groupList.add(group3);
-        groupList.add(group4);
+        for (int i = 0; i < arrGroup.length; i++) {
+            HashMap<String, String> mapGroup = new HashMap<>();
+            mapGroup.put("Group", arrGroup[i]);
+            groupList.add(mapGroup);
 
-        List<List<Map<String, String>>> childList = new ArrayList<List<Map<String, String>>>();
-
-        List<Map<String, String>> childList1 = new ArrayList<Map<String, String>>();
-        child1.put("Contents", "오늘의 업데이트는 다음과 같습니다.\n최신버전으로 업데이트 해주세요.");
-        childList1.add(child1);
-
-        List<Map<String, String>> childList2 = new ArrayList<Map<String, String>>();
-        child2.put("Contents", "매월 1일 새벽 3시에 시스템 정기정검을 시행합니다.");
-        childList2.add(child2);
-
-        List<Map<String, String>> childList3 = new ArrayList<Map<String, String>>();
-        child3.put("Contents", "회원탈퇴를 위해서는 xxx@aaa.com 으로 메일을 주시기 바랍니다.");
-        childList3.add(child3);
-
-        List<Map<String, String>> childList4 = new ArrayList<Map<String, String>>();
-        child4.put("Contents", "개인정보 동의를 하여야 앱을 정상적으로 사용할 수 있습니다.");
-        childList4.add(child4);
-
-        childList.add(childList1);
-        childList.add(childList2);
-        childList.add(childList3);
-        childList.add(childList4);
+            ArrayList<HashMap<String, String>> childList = new ArrayList<>();
+            for (int j = 0; j < arrChild[i].length; j++) {
+                HashMap<String, String> mapChild = new HashMap<>();
+                mapChild.put("Contents", arrChild1[j]);
+                childList.add(mapChild);
+            }
+            childLists.add(childList);
+        }
 
         mListView = (ExpandableListView) findViewById(R.id.listView1);
-//        mListView.setAdapter(new AdapterView_ExpandableListView_01_Adapter(this, R.layout.activity_adapterview_listview_05_row, mGroupList, mChildList));
+        mListView.setAdapter(new SimpleExpandableListAdapter(this, groupList, android.R.layout.simple_expandable_list_item_1, new String[]{"Group"}, new int[]{android.R.id.text1}, childLists, android.R.layout.simple_expandable_list_item_1, new String[]{"Contents"}, new int[]{android.R.id.text1}));
 
-        mListView.setAdapter(new SimpleExpandableListAdapter(this, groupList, android.R.layout.simple_expandable_list_item_1, new String[]{"Title"}, new int[]{android.R.id.text1}, childList, android.R.layout.simple_expandable_list_item_1, new String[]{"Contents"}, new int[]{android.R.id.text1}));
         mListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-                Toast.makeText(getApplicationContext(), "g click = " + groupPosition, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Group click = " + groupPosition, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -85,7 +59,7 @@ public class AdapterView_ExpandableListView_01_Activity extends Activity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                Toast.makeText(getApplicationContext(), "c click = " + childPosition,
+                Toast.makeText(getApplicationContext(), "Child click = " + childPosition,
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
@@ -94,7 +68,7 @@ public class AdapterView_ExpandableListView_01_Activity extends Activity {
         mListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(), "g Collapse = " + groupPosition,
+                Toast.makeText(getApplicationContext(), "Group Collapse = " + groupPosition,
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -102,7 +76,7 @@ public class AdapterView_ExpandableListView_01_Activity extends Activity {
         mListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(), "g Expand = " + groupPosition,
+                Toast.makeText(getApplicationContext(), "Group Expand = " + groupPosition,
                         Toast.LENGTH_SHORT).show();
             }
         });

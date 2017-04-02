@@ -12,33 +12,33 @@ import java.util.ArrayList;
 
 import io.android_tech.myexample.R;
 
-public class AdapterView_ExpandableListView_01_Adapter extends BaseExpandableListAdapter {
+public class AdapterView_ExpandableListView_02_Adapter extends BaseExpandableListAdapter {
 
-    private ArrayList<String> groupList = null;
-    private ArrayList<ArrayList<String>> childList = null;
+    private ArrayList<String> titleList = null;
+    private ArrayList<String> contentList = null;
     private ViewHolder viewHolder = null;
     private int mResource = 0;
     private Context mContext = null;
 
-    public AdapterView_ExpandableListView_01_Adapter(Context context, int _resource, ArrayList<String> groupList, ArrayList<ArrayList<String>> childList) {
+    public AdapterView_ExpandableListView_02_Adapter(Context context, int _resource, ArrayList<String> titleList, ArrayList<String> contentList) {
 
         super();
 
         mResource = _resource;
         mContext = context;
 
-        this.groupList = groupList;
-        this.childList = childList;
+        this.titleList = titleList;
+        this.contentList = contentList;
     }
 
     @Override
     public String getGroup(int groupPosition) {
-        return groupList.get(groupPosition);
+        return titleList.get(groupPosition);
     }
 
     @Override
     public int getGroupCount() {
-        return groupList.size();
+        return titleList.size();
     }
 
     @Override
@@ -74,12 +74,12 @@ public class AdapterView_ExpandableListView_01_Adapter extends BaseExpandableLis
 
     @Override
     public String getChild(int groupPosition, int childPosition) {
-        return childList.get(groupPosition).get(childPosition);
+        return contentList.get(childPosition);
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return childList.get(groupPosition).size();
+        return contentList.size();
     }
 
     @Override
