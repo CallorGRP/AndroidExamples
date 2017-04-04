@@ -15,7 +15,7 @@ public class View_Visibility_02_Activity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_view_visibility_02);
+        setContentView(R.layout.activity_view_visibility_02);
 
         btn1 = (Button) findViewById(R.id.btn1);
         Button btnVisible = (Button) findViewById(R.id.btnVisible);

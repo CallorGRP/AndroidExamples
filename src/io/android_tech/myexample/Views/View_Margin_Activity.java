@@ -8,6 +8,6 @@ public class View_Margin_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(io.android_tech.myexample.R.layout.activity_view_margin);
+        setContentView(io.android_tech.myexample.R.layout.activity_view_margin_01);
     }
 }
