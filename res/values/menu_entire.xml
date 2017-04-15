@@ -152,30 +152,30 @@
 		<item>웹뷰10</item>
 	</string-array>
 	<string-array name="location_menu">
-		<item>위치정보01</item>
-		<item>위치정보02</item>
-		<item>위치정보03</item>
-		<item>위치정보04</item>
-		<item>위치정보05</item>
-		<item>위치정보06</item>
-		<item>위치정보07</item>
-		<item>위치정보08</item>
-		<item>위치정보09</item>
-		<item>위치정보10</item>
+		<item>위치 기반 서비스01</item>
+		<item>위치 기반 서비스02</item>
+		<item>위치 기반 서비스03</item>
+		<item>위치 기반 서비스04</item>
+		<item>위치 기반 서비스05</item>
+		<item>위치 기반 서비스06</item>
+		<item>위치 기반 서비스07</item>
+		<item>위치 기반 서비스08</item>
+		<item>위치 기반 서비스09</item>
+		<item>위치 기반 서비스10</item>
 	</string-array>
 	<string-array name="sns_menu">
-		<item>소셜네트워크서비스01</item>
-		<item>소셜네트워크서비스02</item>
-		<item>소셜네트워크서비스03</item>
-		<item>소셜네트워크서비스04</item>
-		<item>소셜네트워크서비스05</item>
-		<item>소셜네트워크서비스06</item>
-		<item>소셜네트워크서비스07</item>
-		<item>소셜네트워크서비스08</item>
-		<item>소셜네트워크서비스09</item>
-		<item>소셜네트워크서비스10</item>
-		<item>소셜네트워크서비스11</item>
-		<item>소셜네트워크서비스12</item>
-		<item>소셜네트워크서비스13</item>
+		<item>소셜미디어01</item>
+		<item>소셜미디어02</item>
+		<item>소셜미디어03</item>
+		<item>소셜미디어04</item>
+		<item>소셜미디어05</item>
+		<item>소셜미디어06</item>
+		<item>소셜미디어07</item>
+		<item>소셜미디어08</item>
+		<item>소셜미디어09</item>
+		<item>소셜미디어10</item>
+		<item>소셜미디어11</item>
+		<item>소셜미디어12</item>
+		<item>소셜미디어13</item>
 	</string-array>
 </resources>

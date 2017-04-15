@@ -13,6 +13,7 @@ import android.widget.Toast;
 import io.android_tech.myexample.Activity.Activity_Main;
 import io.android_tech.myexample.AdapterView.AdapterView_Main;
 import io.android_tech.myexample.BroadcastReceiver.Receiver_Main;
+import io.android_tech.myexample.ContentProvider.Provider_Main;
 import io.android_tech.myexample.Layouts.Layout_Main;
 import io.android_tech.myexample.Location.Location_Main;
 import io.android_tech.myexample.MultiMedia.MultiMedia_Main;
@@ -58,35 +59,36 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
             case 3:
                 i = new Intent(this, AdapterView_Main.class);
                 break;
-            /*
-            case 5:
+            case 4:
                 i = new Intent(this, Thread_Main.class);
                 break;
-            case 7:
-                i = new Intent(this, Network_Main.class);
-                break;
-            case 8:
-                i = new Intent(this, WebView_Main.class);
-                break;
-            case 9:
+            case 5:
                 i = new Intent(this, Activity_Main.class);
                 break;
-            case 10:
+            case 6:
                 i = new Intent(this, Service_Main.class);
                 break;
-            case 11:
+            case 7:
                 i = new Intent(this, Receiver_Main.class);
                 break;
-            case 13:
+            case 8:
+                i = new Intent(this, Provider_Main.class);
+                break;
+            case 9:
                 i = new Intent(this, MultiMedia_Main.class);
                 break;
-            case 14:
+            case 10:
+                i = new Intent(this, Network_Main.class);
+                break;
+            case 11:
+                i = new Intent(this, WebView_Main.class);
+                break;
+            case 12:
                 i = new Intent(this, Location_Main.class);
                 break;
-            case 15:
+            case 13:
                 i = new Intent(this, SNS_Main.class);
                 break;
-                */
             default:
                 Toast.makeText(this, "준비중", Toast.LENGTH_SHORT).show();
                 return;

@@ -12,7 +12,7 @@ public class Thread_Thread_07_Activity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(io.android_tech.myexample.R.layout.activity_thread_thread_06);
+        setContentView(io.android_tech.myexample.R.layout.activity_thread_thread_07);
         textView = (TextView) findViewById(io.android_tech.myexample.R.id.textView);
         Button btn1 = (Button) findViewById(io.android_tech.myexample.R.id.btn1);
         Button btn2 = (Button) findViewById(io.android_tech.myexample.R.id.btn2);
@@ -37,7 +37,7 @@ public class Thread_Thread_07_Activity extends Activity implements View.OnClickL
                 textView.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        textView.setText("updated!");
+                        textView.setText("updated2!");
                     }
                 }, 1000);
                 break;
