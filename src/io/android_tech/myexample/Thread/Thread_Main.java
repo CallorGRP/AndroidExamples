@@ -67,6 +67,9 @@ public class Thread_Main extends ListActivity implements OnItemClickListener {
             case 11:
                 i = new Intent(this, Thread_Thread_12_Activity.class);
                 break;
+            case 12:
+                i = new Intent(this, Thread_Thread_13_Activity.class);
+                break;
             default:
                 return;
 

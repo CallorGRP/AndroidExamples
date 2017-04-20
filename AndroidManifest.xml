@@ -104,7 +104,7 @@
         <activity android:name=".Thread.Thread_Thread_09_Activity" />
         <activity android:name=".Thread.Thread_Thread_10_Activity" />
         <activity android:name=".Thread.Thread_Thread_11_Activity" />
-        <activity android:name=".Thread.Thread_Thread_12_Activity" />
+        <activity android:name=".Thread.Thread_Thread_13_Activity" />
 
         <activity android:name=".Activity.Activity_Main" />
         <activity android:name=".Activity.Activity_01_Activity" />
