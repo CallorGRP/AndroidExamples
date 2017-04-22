@@ -15,7 +15,7 @@ public class Thread_Thread_13_Activity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(io.android_tech.myexample.R.layout.activity_thread_thread_12);
+        setContentView(io.android_tech.myexample.R.layout.activity_thread_thread_13);
 
         btn1 = (Button) findViewById(io.android_tech.myexample.R.id.btn1);
         pb = (ProgressBar) findViewById(io.android_tech.myexample.R.id.progressBar);

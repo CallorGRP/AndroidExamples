@@ -16,8 +16,6 @@ public class Thread_Thread_12_Activity extends Activity implements View.OnClickL
     Button btn1;
     TextView tvResult;
 
-    FactorialTask task;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,21 +27,20 @@ public class Thread_Thread_12_Activity extends Activity implements View.OnClickL
 
         btn1.setOnClickListener(this);
 
-        task = new FactorialTask();
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case io.android_tech.myexample.R.id.btn1:
-                task.execute(Integer.parseInt(edtNumber.getText().toString()));
+                new FactorialTask().execute(Long.parseLong(edtNumber.getText().toString()));
                 break;
             default:
                 break;
         }
     }
 
-    class FactorialTask extends AsyncTask<Integer, Integer, Integer> {
+    class FactorialTask extends AsyncTask<Long, Long, Long> {
 
         @Override
         protected void onCancelled() {
@@ -51,9 +48,9 @@ public class Thread_Thread_12_Activity extends Activity implements View.OnClickL
         }
 
         @Override
-        protected void onPostExecute(Integer result) {
+        protected void onPostExecute(Long result) {
             super.onPostExecute(result);
-            tvResult.setText(result);
+            tvResult.setText(edtNumber.getText().toString() + "! = " + result);
 
         }
 
@@ -62,16 +59,16 @@ public class Thread_Thread_12_Activity extends Activity implements View.OnClickL
         }
 
         @Override
-        protected void onProgressUpdate(Integer... values) {
+        protected void onProgressUpdate(Long... values) {
             super.onProgressUpdate(values);
         }
 
         @Override
-        protected Integer doInBackground(Integer... params) {
-            int result = 1;
-            int num = params[0];
+        protected Long doInBackground(Long... params) {
+            long result = 1;
+            long num = params[0];
 
-            for (int i = 1; i <= num; i++) {
+            for (long i = 1; i <= num; i++) {
                 result = result * i;
             }
 

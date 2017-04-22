@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="tweet-ui-1.3.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/2ff1f6809cf89bcfac3265448f31e9494eec0703/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/2ff1f6809cf89bcfac3265448f31e9494eec0703/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/62152e629567d0cf96e76f6d52b1daad1484b7f9/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/62152e629567d0cf96e76f6d52b1daad1484b7f9/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
